@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>nsw2 set prov rcd defaults for new</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+	var funcName = "nsw2 BR: nsw2 set prov rcd defaults for new: ";
+	gs.info(funcName + " request type is using " + current.request_type);
+	var reqType = "";
+	var shortDescMsgText = "";
+    if (current.request_type == '1') {
+		reqType = "New";
+	} else if (current.request_type == '2') {
+		reqType = "Move";
+	} else if (current.request_type == '3') {
+		reqType = "Change";
+	} else if (current.request_type == '4') {
+		reqType = "Delete";
+	} else {
+		reqType = "Undefined";
+	}
+	if (reqType == "New") {
+		current.short_description = "nspro: " + reqType + " request for " + current.site_name;
+	}
+	if (reqType == "Move") {
+		shortDescMsgText = current.site_rcd_ref.site_name;
+		current.short_description = "nspro: " + reqType + " request for " + shortDescMsgText;
+		current.site_name = current.site_rcd_ref.name;
+	}
+	if (reqType == "Change") {
+		shortDescMsgText = current.site_rcd_ref.site_name;
+		current.short_description = "nspro: " + reqType + " request for " + shortDescMsgText;
+		current.site_name = current.site_rcd_ref.name;
+	}
+	if (reqType == "Delete") {
+		shortDescMsgText = current.site_rcd_ref.site_name;
+		current.short_description = "nspro: " + reqType + " request for " + shortDescMsgText;
+		current.site_name = current.site_rcd_ref.name;
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-12-21 21:00:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>364ab37d1b684d947294db1ee54bcbbd</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>nsw2 set prov rcd defaults for new</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_script_364ab37d1b684d947294db1ee54bcbbd</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-08-08 16:07:21</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=364ab37d1b684d947294db1ee54bcbbd"/>
+</record_update>

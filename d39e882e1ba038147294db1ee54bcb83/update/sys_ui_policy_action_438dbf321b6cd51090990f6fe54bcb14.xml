@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>selected_assets</field>
+        <mandatory>false</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-07-11 19:57:32</sys_created_on>
+        <sys_id>438dbf321b6cd51090990f6fe54bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>selected_assets</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ui_policy_action_438dbf321b6cd51090990f6fe54bcb14</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-07-11 19:57:32</sys_updated_on>
+        <table>x_g_sonc_dit_nsw22_nsw2_fs_tasks</table>
+        <ui_policy display_value="FS task equip ret policy">2e0df3fe1b2cd51090990f6fe54bcbc5</ui_policy>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+</record_update>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="quickquote">3fa869ba1bcc89907294db1ee54bcb19</macroponent>
+        <name>addTelcoRate</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, event, helpers, imports}) {
+    // called after telco rate look up data source has completed
+    const funcName = "addTelcoRate";
+    console.info(funcName + " has been called");
+
+    console.log(funcName, JSON.stringify(event,null,4)); // for debug
+
+    const tr_result = api.data.look_up_telcoRates.results[0];
+    console.log(funcName, "tr_result", tr_result); // for debug
+
+    var currentCost = api.state.qqCost;
+    console.info("adding ", currentCost, " to telco cost ", tr_result.cost.value);
+    currentCost = currentCost + tr_result.cost.value;
+
+    var mcostStr = "$" + currentCost.toFixed(2);
+    api.setState('qqMCostStr', mcostStr);
+    
+    
+    return;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-12-06 16:52:46</sys_created_on>
+        <sys_id>e972f9cd1bd8cdd07294db1ee54bcbe5</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>addTelcoRate</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ux_client_script_e972f9cd1bd8cdd07294db1ee54bcbe5</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-12-06 17:21:50</sys_updated_on>
+        <target/>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

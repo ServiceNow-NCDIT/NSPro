@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="z_circuit_id" label="Z circuit ID" language="en" table="x_g_sonc_dit_nsw22_nsw2_port_connections">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>z_circuit_id</element>
+            <help/>
+            <hint/>
+            <label>Z circuit ID</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_port_connections</name>
+            <plural>Z circuit IDs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:37:40</sys_created_on>
+            <sys_id>1b2b75b71bc3211490990f6fe54bcbe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Z circuit ID</sys_name>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_documentation_x_g_sonc_dit_nsw22_nsw2_port_connections_z_circuit_id_en</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:37:40</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

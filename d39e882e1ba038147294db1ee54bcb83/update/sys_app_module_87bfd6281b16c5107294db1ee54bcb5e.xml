@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="dit nsw22">1a1314221b2438147294db1ee54bcb12</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>MAP</link_type>
+        <map_page display_value="x_g_sonc_dit_nsw22_point_of_presence_sta">44f7becb1b7678507294db1ee54bcb0f</map_page>
+        <mobile_title>nsw2 active prov map</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>800</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_g_sonc_dit_nsw22.net_analyst</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-03-14 17:02:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>87bfd6281b16c5107294db1ee54bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>nsw2 active prov map</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_app_module_87bfd6281b16c5107294db1ee54bcb5e</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-03-14 17:02:11</sys_updated_on>
+        <timeline_page/>
+        <title>nsw2 active prov map</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

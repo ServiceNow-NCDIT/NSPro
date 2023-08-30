@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <authentication_type>no_authentication</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description>Used to get lattitude and logitude and confirm address for creation of location record and associated site record for NSPro (nswan migration). </description>
+        <name>getLatLonViaGoogleMaps</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>https://maps.googleapis.com/maps/api/geocode/json</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-09-13 16:26:41</sys_created_on>
+        <sys_id>0d66490e1b2af4107294db1ee54bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getLatLonViaGoogleMaps</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_rest_message_0d66490e1b2af4107294db1ee54bcbd3</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-09-13 16:26:41</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>

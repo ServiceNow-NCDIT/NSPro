@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmn_map_page">
+    <cmn_map_page action="INSERT_OR_UPDATE">
+        <center_address>35.472511,-79.897494</center_address>
+        <center_latitude>35.4766271</center_latitude>
+        <center_longitude>-79.8963242</center_longitude>
+        <controls_size>large</controls_size>
+        <coordinates_retrieved_on/>
+        <disable_map_controls/>
+        <disable_nav_bar>false</disable_nav_bar>
+        <filter/>
+        <initial_zoom>8</initial_zoom>
+        <name>x_g_sonc_dit_nsw22_point_of_presence_sta</name>
+        <overview>true</overview>
+        <refresh_on_zoom>false</refresh_on_zoom>
+        <roles/>
+        <script><![CDATA[// get pop site info just for fun
+var gr = new GlideRecord("x_g_sonc_dit_nsw22_nsw2_sites");
+var popLocationArrayOfSysId = [];
+//get the pop sites that we want
+gr.addEncodedQuery('site_type=POP^nameCONTAINSPOP');
+gr.query();
+while (gr.next()) {
+	popLocationArrayOfSysId.push(gr.location.sys_id);
+}
+gs.info("ditnsw22 point_of_presence_status_map: pop loc record count is " + popLocationArrayOfSysId.length);
+
+// get provisioning activity
+var provGr = new GlideRecord("x_g_sonc_dit_nsw22_nsw2_provisioning_tasks");
+var  provActiveTaskInfoArray = [];
+//get the prov rcds that we want
+provGr.addEncodedQuery('provisoning_stateNOT IN11,12^site_idISNOTEMPTY');
+provGr.addActiveQuery();
+provGr.query();
+while (provGr.next()) {
+	provActiveTaskInfoArray.push(provGr.sys_id);
+	if (provGr.site_rcd_ref.location.latitude && provGr.site_rcd_ref.location.longitude) {
+		gs.info("ditnsw22 point_of_presence_status_map: prov site " + provGr.getDisplayValue() + " lat, long = " + provGr.site_rcd_ref.location.latitude + ", " + provGr.site_rcd_ref.location.longitude);
+		var pitem = map.addItem(provGr);
+		pitem.latitude = provGr.site_rcd_ref.location.latitude;
+		pitem.longitude = provGr.site_rcd_ref.location.longitude;
+		pitem.dialog_title = provGr.getDisplayValue();
+		pitem.icon = "https://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png";
+		pitem.icon_width = "32";
+		pitem.icon_height = "32";
+	}
+}
+gs.info("ditnsw22 point_of_presence_status_map: active prov rcd count is " + provActiveTaskInfoArray.length);
+
+var locGr = new GlideRecord("cmn_location");
+locGr.addEncodedQuery('u_nsw_site_id>0^nameCONTAINSPop');
+locGr.query();
+while (locGr.next()) {
+	if (locGr.latitude && locGr.longitude) {
+		var item = map.addItem(locGr);
+		item.latitude = locGr.getValue('latitude');
+		item.longitude = locGr.getValue('longitude');
+		item.dialog_title = locGr.getDisplayValue();
+		item.icon = "https://ncgovappdev.servicenowservices.com/nsw2_pop_icon_neutral.png";
+		item.icon_width = "32";
+		item.icon_height = "32";
+	} else {
+		gs.warn("ditnsw22 point_of_presence_status_map: no lat, long for " + locGr.getDisplayValue());
+	}
+}]]></script>
+        <show_device_location>true</show_device_location>
+        <suffix>point_of_presence_status_map</suffix>
+        <sys_class_name>cmn_map_page</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-09-29 13:43:15</sys_created_on>
+        <sys_id>44f7becb1b7678507294db1ee54bcb0f</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>x_g_sonc_dit_nsw22_point_of_presence_sta</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>cmn_map_page_44f7becb1b7678507294db1ee54bcb0f</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-09-30 15:25:52</sys_updated_on>
+        <type>satellite</type>
+        <type_selection>buttons</type_selection>
+        <use_advanced_configuration>false</use_advanced_configuration>
+    </cmn_map_page>
+</record_update>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description>Process ncdit telco order responses</description>
+        <event_name>email.read</event_name>
+        <filter_condition table="sys_email">subjectLIKEState of NC DIT Circuit Order Request^EQ<item endquery="false" field="subject" goto="false" newquery="false" operator="LIKE" or="false" value="State of NC DIT Circuit Order Request"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <from/>
+        <name>Telco Circuit Order Response</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+
+	// Implement email action here
+	var gdt = new GlideDateTime();
+	// expected fields
+	logger.info("nsw2 telcoOrderResponse " + JSON.stringify(email.body));
+	// we need to know if we are dealing with the primary or secondary circuit.
+	// we can check the subject line to see if it contains the telco name
+	// and use that to match which circuit entry set (1 = primary, 2 = secondary)
+	if (email.subject.indexOf(current.telco_name) !== -1) {	
+		// if primary
+		current.circuit_ord_response_received_date = gdt;
+		current.telco_order_contact = email.from;
+		
+		current.telco_response_message = email.body.comments;
+		current.circuit_id = email.body.circuit_id;
+		current.telco_r_order_number = email.body.telco_order_number;
+
+		gd = new GlideDateTime();
+		gd.setDisplayValue(email.body.circuit_due_date + " 00:00:00");
+		current.circuit_due_date = gd;
+		
+		current.telco_r_monthly_cost = parseFloat(email.body.monthly_circuit_cost).toFixed(2);
+		current.telco_r_constr_cost = parseFloat(email.body.construction_cost).toFixed(2);
+		current.telco_r_total_cost = parseFloat(email.body.total_cost).toFixed(2);
+		current.telco_r_other1time_cost = parseFloat(email.body.other_one_time_cost).toFixed(2);
+	} else if (email.subject.indexOf(current.telco_name_2) !== -1) {
+		// if secondary
+		current.circuit_ord_response_received_date_2 = gdt;
+		current.telco_order_contact_2 = email.from;
+		
+		current.telco_response_message_2 = email.body.comments;
+		current.circuit_id_2 = email.body.circuit_id;
+		current.telco_r_order_number_2 = email.body.telco_order_number;
+
+		gd = new GlideDateTime();
+		gd.setDisplayValue(email.body.circuit_due_date + " 00:00:00");
+		current.circuit_due_date_2 = gd;
+		
+		current.telco_r_monthly_cost_2 = parseFloat(email.body.monthly_circuit_cost).toFixed(2);
+		current.telco_r_constr_cost_2 = parseFloat(email.body.construction_cost).toFixed(2);
+		current.telco_r_total_cost_2 = parseFloat(email.body.total_cost).toFixed(2);
+		current.telco_r_other1time_cost_2 = parseFloat(email.body.other_one_time_cost).toFixed(2);
+	} else {
+		logger.error("nsw2 telcoOrderResponse No telco name match in reply; Subject: " + email.subject);
+	}
+	
+	current.update();
+
+})(current, event, email, logger, classifier);]]></script>
+        <stop_processing>true</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-03-15 17:29:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1b3faff41b5689107294db1ee54bcb37</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Telco Circuit Order Response</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sysevent_in_email_action_1b3faff41b5689107294db1ee54bcb37</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-03-28 13:44:20</sys_updated_on>
+        <table>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</table>
+        <template/>
+        <type>reply</type>
+    </sysevent_in_email_action>
+</record_update>

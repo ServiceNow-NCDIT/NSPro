@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="assigned_pop_abbrev" table="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>assigned_pop_abbrev</element>
+            <name>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-10-05 17:56:07</sys_created_on>
+            <sys_id>391bfd371bc3211490990f6fe54bcb2f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>assigned_pop_abbrev</sys_name>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_choice_x_g_sonc_dit_nsw22_nsw2_provisioning_tasks_assigned_pop_abbrev</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-10-05 17:56:07</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>assigned_pop_abbrev</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASH</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-10-05 17:56:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b92eae8d1b07bc907294db1ee54bcb06</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-06-29 18:05:32</sys_updated_on>
+            <value>ASH</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>assigned_pop_abbrev</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CHR</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-10-05 17:59:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>15beeacd1b07bc907294db1ee54bcb4c</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-06-29 18:05:38</sys_updated_on>
+            <value>CHR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>assigned_pop_abbrev</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EDC</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-10-05 17:57:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cf7e2e8d1b07bc907294db1ee54bcbb7</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-06-29 18:05:43</sys_updated_on>
+            <value>EDC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>assigned_pop_abbrev</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>FAY</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-10-05 17:59:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>812f66011b47bc907294db1ee54bcb19</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-06-29 18:05:49</sys_updated_on>
+            <value>FAY</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>assigned_pop_abbrev</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>GBO</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</name>
+            <sequence>500</sequence>
+            <synonyms/>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-10-05 18:00:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bc4fe6cd1b07bc907294db1ee54bcbf1</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-06-29 18:05:54</sys_updated_on>
+            <value>GBO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>assigned_pop_abbrev</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RAL</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</name>
+            <sequence>600</sequence>
+            <synonyms/>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-10-05 18:00:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b25f2e411b47bc907294db1ee54bcb40</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-06-29 18:06:00</sys_updated_on>
+            <value>RAL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>assigned_pop_abbrev</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RMT</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</name>
+            <sequence>700</sequence>
+            <synonyms/>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-10-05 18:01:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>937f22811b47bc907294db1ee54bcb93</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-06-29 18:06:07</sys_updated_on>
+            <value>RMT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>assigned_pop_abbrev</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>WDC</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</name>
+            <sequence>800</sequence>
+            <synonyms/>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-10-05 18:01:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>328fe68d1b07bc907294db1ee54bcb43</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-06-29 18:06:12</sys_updated_on>
+            <value>WDC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>assigned_pop_abbrev</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>WIL</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</name>
+            <sequence>900</sequence>
+            <synonyms/>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-10-05 18:01:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e39fe6411b47bc907294db1ee54bcb60</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-06-29 18:06:17</sys_updated_on>
+            <value>WIL</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="6143f8261b6838147294db1ee54bcb5b" sys_domain="global" table="x_g_sonc_dit_nsw22_nsw2_sites" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>site_id</element>
+            <position>0</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>ea95ae641b56c5107294db1ee54bcbbb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>1</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>a695ae641b56c5107294db1ee54bcbbc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>site_name</element>
+            <position>2</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>2e95ae641b56c5107294db1ee54bcbbc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dept_code</element>
+            <position>3</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>a295ae641b56c5107294db1ee54bcbbd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>site_state</element>
+            <position>4</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>2a95ae641b56c5107294db1ee54bcbbd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>5</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>ae95ae641b56c5107294db1ee54bcbbd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>2695ae641b56c5107294db1ee54bcbbe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>7</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>aa95ae641b56c5107294db1ee54bcbbe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <position>8</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>2295ae641b56c5107294db1ee54bcbbf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>site_in_service_date</element>
+            <position>9</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>a695ae641b56c5107294db1ee54bcbbf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>agency_name</element>
+            <position>10</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>2e95ae641b56c5107294db1ee54bcbbf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>site_priority</element>
+            <position>11</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>a295ae641b56c5107294db1ee54bcbc0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>site_type</element>
+            <position>12</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>2a95ae641b56c5107294db1ee54bcbc0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>13</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>ae95ae641b56c5107294db1ee54bcbc0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>14</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>2695ae641b56c5107294db1ee54bcbc1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contact_ops_pri</element>
+            <position>15</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>aa95ae641b56c5107294db1ee54bcbc1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contact_ops_alt</element>
+            <position>16</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>2295ae641b56c5107294db1ee54bcbc2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>17</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>a695ae641b56c5107294db1ee54bcbc2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_offerings_in_use</element>
+            <position>18</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>2e95ae641b56c5107294db1ee54bcbc2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>19</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>a295ae641b56c5107294db1ee54bcbc3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>office_hours_desc</element>
+            <position>20</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>2a95ae641b56c5107294db1ee54bcbc3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vip_site</element>
+            <position>21</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-14 17:24:50</sys_created_on>
+            <sys_id>ae95ae641b56c5107294db1ee54bcbc3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-14 17:24:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>agency_ref</element>
+            <position>22</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-05-02 17:31:39</sys_created_on>
+            <sys_id>901d369c1b9b011090990f6fe54bcb0c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-05-02 17:31:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_g_sonc_dit_nsw22_nsw2_sites</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-06-07 18:12:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6143f8261b6838147294db1ee54bcb5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_dit_nsw22_nsw2_sites</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_ui_section_6143f8261b6838147294db1ee54bcb5b</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-06-07 18:12:09</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

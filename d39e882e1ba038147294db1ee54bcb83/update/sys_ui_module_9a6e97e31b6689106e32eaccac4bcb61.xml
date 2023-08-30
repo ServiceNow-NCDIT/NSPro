@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="dit nsw22">166e97e31b6689106e32eaccac4bcb5e</application>
+        <filter/>
+        <name>nsw2 fs tasks</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_g_sonc_dit_nsw22.nsw2_fs_tasks_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-04-05 15:30:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9a6e97e31b6689106e32eaccac4bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>nsw2 fs tasks</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ui_module_9a6e97e31b6689106e32eaccac4bcb61</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-04-05 15:30:31</sys_updated_on>
+        <table>x_g_sonc_dit_nsw22_nsw2_fs_tasks</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

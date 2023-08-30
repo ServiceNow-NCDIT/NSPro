@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="NSPro Site Service Change Request">154b6d971bdf4d506e32eaccac4bcb3d</cat_item>
+        <cat_variable>IO:51fc619b1bdf4d506e32eaccac4bcb94</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>nsw2 set change req site info</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    //Type appropriate comment here, and begin script below
+    var funcName = "nsw2 set change req site info: ";
+    console.info(funcName + "we are here");
+    
+    var selectedSite = newValue;
+    console.info(funcName + "selectedSite: " + JSON.stringify(selectedSite));
+
+    // call clinet utility getSiteSvcsInUse
+    var detailsAjax = new GlideAjax('x_g_sonc_dit_nsw22.NcditNsw2UtilsClient');
+    detailsAjax.addParam('sysparm_name', 'getSiteSvcsInUse');
+    detailsAjax.addParam('sysparm_siteRcdId', selectedSite);
+    detailsAjax.getXML(callbackGetSiteDetails);
+
+    function callbackGetSiteDetails(response) {
+        var siteResp = response.responseXML.documentElement.getAttribute("answer");
+        var site_data = JSON.parse(siteResp);
+        console.info(funcName + "at callback for site data");
+        //console.info("debug response:", response);
+        console.info("site_data: ", site_data);
+
+        // set site service data info
+        g_form.setValue('current_site_services_in_use', site_data.svcsInUseDescription);
+    }
+
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-08-10 17:08:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1566b1281b9199546e32eaccac4bcbd5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>nsw2 set change req site info</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>catalog_script_client_1566b1281b9199546e32eaccac4bcbd5</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-08-10 18:49:09</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Telco info" section_id="8a468b3d1b8d3cd490990f6fe54bcb9c" sys_domain="global" table="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_name</element>
+            <position>0</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1e77faf11b3d45907294db1ee54bcbb4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_vendor</element>
+            <position>1</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9277faf11b3d45907294db1ee54bcbb5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_order_contact</element>
+            <position>2</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1a77faf11b3d45907294db1ee54bcbb5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_email_for_order</element>
+            <position>3</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9e77faf11b3d45907294db1ee54bcbb5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_order_req_type</element>
+            <position>4</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1677faf11b3d45907294db1ee54bcbb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_ord_req_needby_date</element>
+            <position>5</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9a77faf11b3d45907294db1ee54bcbb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_order_sent_date</element>
+            <position>6</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1277faf11b3d45907294db1ee54bcbb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_ord_response_received_date</element>
+            <position>7</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9677faf11b3d45907294db1ee54bcbb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_lata_from_telco</element>
+            <position>8</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1e77faf11b3d45907294db1ee54bcbb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_type_jack</element>
+            <position>9</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9277faf11b3d45907294db1ee54bcbb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cir_speed_ingress</element>
+            <position>10</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1a77faf11b3d45907294db1ee54bcbb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cir_speed_egress</element>
+            <position>11</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9e77faf11b3d45907294db1ee54bcbb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_ready_date</element>
+            <position>12</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1677faf11b3d45907294db1ee54bcbb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_special_instructions</element>
+            <position>13</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9a77faf11b3d45907294db1ee54bcbb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_pop_abbrev</element>
+            <position>14</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1277faf11b3d45907294db1ee54bcbba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_pe</element>
+            <position>15</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9677faf11b3d45907294db1ee54bcbba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_pe_port</element>
+            <position>16</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1e77faf11b3d45907294db1ee54bcbba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>17</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9277faf11b3d45907294db1ee54bcbbb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_name_2</element>
+            <position>18</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1a77faf11b3d45907294db1ee54bcbbb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_vendor_2</element>
+            <position>19</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9e77faf11b3d45907294db1ee54bcbbb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_order_contact_2</element>
+            <position>20</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1677faf11b3d45907294db1ee54bcbbc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_email_for_order_2</element>
+            <position>21</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9a77faf11b3d45907294db1ee54bcbbc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_order_req_type_2</element>
+            <position>22</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1277faf11b3d45907294db1ee54bcbbd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_ord_req_needby_date_2</element>
+            <position>23</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9677faf11b3d45907294db1ee54bcbbd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_order_sent_date_2</element>
+            <position>24</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1e77faf11b3d45907294db1ee54bcbbd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_ord_response_received_date_2</element>
+            <position>25</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9277faf11b3d45907294db1ee54bcbbe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_lata_from_telco_2</element>
+            <position>26</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1a77faf11b3d45907294db1ee54bcbbe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_type_jack_2</element>
+            <position>27</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9e77faf11b3d45907294db1ee54bcbbe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cir_speed_ingress_2</element>
+            <position>28</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1677faf11b3d45907294db1ee54bcbbf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cir_speed_egress_2</element>
+            <position>29</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9a77faf11b3d45907294db1ee54bcbbf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_ready_date_2</element>
+            <position>30</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1277faf11b3d45907294db1ee54bcbc0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_special_instructions_2</element>
+            <position>31</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9677faf11b3d45907294db1ee54bcbc0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_pop_abbrev_secondary</element>
+            <position>32</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1e77faf11b3d45907294db1ee54bcbc0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_pe_secondary</element>
+            <position>33</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>9277faf11b3d45907294db1ee54bcbc1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_pe_port_secondary</element>
+            <position>34</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-02-21 19:23:55</sys_created_on>
+            <sys_id>1a77faf11b3d45907294db1ee54bcbc1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco info" display_value="Telco info" name="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" sys_domain="global" view="Default view">8a468b3d1b8d3cd490990f6fe54bcb9c</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-02-21 19:23:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Telco info</caption>
+            <header>false</header>
+            <name>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-06-30 17:30:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8a468b3d1b8d3cd490990f6fe54bcb9c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_ui_section_8a468b3d1b8d3cd490990f6fe54bcb9c</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-06-30 17:30:23</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

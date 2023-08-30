@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmn_map_data_item">
+    <cmn_map_data_item action="INSERT_OR_UPDATE">
+        <condition_type>declarative</condition_type>
+        <conditions table="cmn_location">u_nsw_site_id&gt;=0^nameLIKEPOP^EQ<item endquery="false" field="u_nsw_site_id" goto="false" newquery="false" operator="&gt;=" or="false" value="0"/>
+            <item endquery="false" field="name" goto="false" newquery="false" operator="LIKE" or="false" value="POP"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <name>nsw2 pop location</name>
+        <query_condition_script><![CDATA[answer = (function(input) {
+	return "";
+})(input);]]></query_condition_script>
+        <sys_class_name>cmn_map_data_item</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-09-29 15:08:52</sys_created_on>
+        <sys_id>461e03071b7a78507294db1ee54bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>nsw2 pop location</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>cmn_map_data_item_461e03071b7a78507294db1ee54bcb5c</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-09-29 15:08:52</sys_updated_on>
+        <table>cmn_location</table>
+    </cmn_map_data_item>
+</record_update>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks">provisoning_stateCHANGESFROM1^provisoning_stateCHANGESTO2^request_type=4^EQ<item display_value="Open" endquery="false" field="provisoning_state" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="1"/>
+            <item display_value="Assigned" endquery="false" field="provisoning_state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/>
+            <item display_value="Delete" endquery="false" field="request_type" goto="false" newquery="false" operator="=" or="false" value="4"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>nsw2 set prov rcd def for delete</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+    var funcName = "nsw2 BR set prov rcd def for delete: ";
+    gs.info("nsw2: BR nsw2 set prov rcd def for delete called to action.");
+
+    var nsw2util = new NcditNsw2Utils();
+
+    // get cpe infor for site
+    var cpeResp = nsw2util.nsw2Util_getCpeInfoForSite(current.site_rcd_ref);
+
+    // get circuit info for site
+    var circuitResp = nsw2util.nsw2Util_getCircuitInfoForSite(current.site_rcd_ref);
+
+    if (cpeResp.status == 'OK' && circuitResp.status == 'OK') {
+        var wnStringWithHtml = "[code]" +
+            "<h1>Site Information for " + current.site_rcd_ref.site_name + "</h1>" +
+            "<h2>Site CPE Information</h2>" +
+            cpeResp.message + "</br>" +
+            "<p>" + JSON.stringify(cpeResp.cpeInfo) + "</p></br>" +
+            "<h2>Site Circuit Information</h2>" +
+            circuitResp.message + "</br>" +
+            "<p>" + JSON.stringify(circuitResp.circuitInfo) + "</p></br>" +
+            "[/code]";
+        current.work_notes = wnStringWithHtml;
+        gs.info(funcName + "CPE resp message = " + cpeResp.message);
+    } else {
+        gs.error(funcName + "nsw2 server side script to get cpe info for prov task " + current.number + " was called and returned " + cpeResp.status + " , " + cpeResp.message);
+        gs.error(funcName + "nsw2 server side script to get circuit info for prov task " + current.number + " was called and returned " + circuitResp.status + " , " + circuitResp.message);
+    }
+
+    // populate provRcd fields for cpe and circuit
+    // for cpe, put list of serial numbers in required_cpe_models
+    if (cpeResp.status == 'OK') {
+        // add serial number list to required cpe models
+        var cpeSnList = [];
+        for (var cpei = 0; cpei < cpeResp.cpeInfo.length; cpei++) {
+            cpeSnList.push(cpeResp.cpeInfo[cpei]['sn']);
+        }
+        gs.info(funcName + "Setting cpe defaults for " + current.number);
+        current.required_cpe_models = cpeSnList.join(',');
+    }
+    // for circuit add telco info fields
+    if (circuitResp.status == 'OK') {
+        // handle at most two circuits - primary and secondary
+        if (circuitResp.circuitInfo.length > 2) {
+            // add log error message that only first two circuits are list and there are more
+            gs.error(funcName + "Provisioning record " + current.number + " has " + circuitResp.circuitInfo.length +
+            "circuits and only two are handled by the provisioning form."
+            );
+            // set first telco name to convey error
+            current.telco_name = "ERROR: MORE THAN 2 CIRCUITS FOUND";
+        } else {
+            if (circuitResp.circuitInfo.length >= 1) {
+                // set primary circuit info
+                current.telco_name = circuitResp.circuitInfo[0].telco_name;
+                current.telco_vendor = circuitResp.circuitInfo[0].vendor_ref;
+                current.circuit_id = circuitResp.circuitInfo[0].name;
+
+                // use correlation id to set pe info
+                var peInfoResp = nsw2util.nsw2Util_getPEInfoByPECircuit(circuitResp.circuitInfo[0].correlation_id);
+                if (peInfoResp.status == 'OK') {
+                    current.assigned_pe = peInfoResp.peInfo.pe_router;
+                    current.assigned_pe_port = peInfoResp.peInfo.sys_id;
+                    current.assigned_pop_abbrev = peInfoResp.peInfo.pop;
+                }
+            }
+            if (circuitResp.circuitInfo.length == 2) {
+                current.telco_name_2 = circuitResp.circuitInfo[1].telco_name;
+                current.telco_vendor_2 = circuitResp.circuitInfo[1].vendor_ref;
+                current.circuit_id_2 = circuitResp.circuitInfo[1].name;
+
+
+                 // use correlation id to set pe info for alternate
+                 var peInfoResp2 = nsw2util.nsw2Util_getPEInfoByPECircuit(circuitResp.circuitInfo[1].correlation_id);
+                 if (peInfoResp.status == 'OK') {
+                     current.assigned_pe_secondary = peInfoResp2.peInfo.pe_router;
+                     current.assigned_pe_port_secondary = peInfoResp2.peInfo.sys_id;
+                     current.assigned_pop_abbrev_secondary = peInfoResp2.peInfo.pop;
+                 }
+            }
+            gs.info(funcName + "Setting circuit defaults for " + current.number);
+        }
+    }
+    // get the associated site record
+    var siteGR = new GlideRecord("x_g_sonc_dit_nsw22_nsw2_sites");
+    var gotSiteGR = siteGR.get(current.site_rcd_ref);
+    if (gotSiteGR) {
+        gs.info(funcName + "Setting fields from site record.");
+        // set other fields
+        current.site_id = siteGR.getValue('site_id');
+        current.location = siteGR.getValue('location');
+        current.due_date = current.req_date;
+        current.req_site_contact_pri = siteGR.getValue('contact_ops_pri'); // added 3/14/23 to populate for deletes
+    } else {
+        gs.error(funcName + "Failed to get site record for " + current.number);
+    }
+
+    // 03/14/23 get associated location record and use it to populate adrress fields
+    var locGR = new GlideRecord("cmn_location");
+    var gotLocGR = locGR.get(current.location);
+    if (gotLocGR) {
+        gs.info(funcName + "Setting fields from location record.");
+        // set other fields
+        current.req_addr_city = locGR.getValue('city');
+        current.req_addr_state = locGR.getValue('state');
+        current.req_addr_street = locGR.getValue('street');
+        current.req_addr_zip = locGR.getValue('zip');
+    } else {
+        gs.error(funcName + "Failed to get location record for " + current.number);
+    }
+
+    // set Assigned WAN service based on site record Service offerings in use
+    //var reMatchSvcTypeWAN = new RegExp('WAN');
+    var site_svcOffsInUseList = siteGR.getValue('service_offerings_in_use').split(',');
+    gs.info(funcName + "Site service offering list = " + site_svcOffsInUseList.join(','));
+    for (var ssoiuIndex = 0; ssoiuIndex < site_svcOffsInUseList.length; ssoiuIndex++) {
+        // for each service off in use ref, find the wan service one and use it.
+        var svcDefGR = new GlideRecord('x_g_sonc_dit_nsw22_service_definitions');
+        if (svcDefGR.get(site_svcOffsInUseList[ssoiuIndex])) {
+            // make sure service type has WAN in it.
+            var thisSvcType = svcDefGR.getValue('svc_type');
+            //if (reMatchSvcTypeWAN.exec(thisSvcType)) {
+            gs.info(funcName + "checking for WAN service type with " + thisSvcType);
+            if (thisSvcType.match(/WAN/)) {
+                current.assigned_wan_service = svcDefGR.getValue('sys_id');
+                gs.info(funcName + "Found wan service for site = " + svcDefGR.getValue('svc_code'));
+                break;
+            }
+        }
+    }
+
+    current.update(); // 08/22/22 keep. runs when=after.
+
+    var pr_pcr_resp = nsw2util.nsw2Util_setPortConRcds2ProvRcdForSite(current.site_rcd_ref, current.sys_id);
+    if (pr_pcr_resp.status == 'OK') {
+        gs.info(funcName + pr_pcr_resp.message);
+    } else {
+        gs.error(funcName + pr_pcr_resp.message);
+    }
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-06-16 13:58:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>da5a79fe1b0015106e32eaccac4bcb6e</sys_id>
+        <sys_mod_count>49</sys_mod_count>
+        <sys_name>nsw2 set prov rcd def for delete</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_script_da5a79fe1b0015106e32eaccac4bcb6e</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2023-03-14 18:49:39</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=da5a79fe1b0015106e32eaccac4bcb6e"/>
+</record_update>

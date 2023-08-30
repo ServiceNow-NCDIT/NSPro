@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-09-14 18:28:00</sys_created_on>
+        <sys_id>4a9816f31b399d5090990f6fe54bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>e08856b31b399d5090990f6fe54bcbcb.x_g_sonc_dit_nsw22.net_analyst</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_security_acl display_value="e08856b31b399d5090990f6fe54bcbcb">788856b376399d504fba1db0e1c7baf7</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_4a9816f31b399d5090990f6fe54bcb89</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-09-14 18:28:00</sys_updated_on>
+        <sys_user_role display_value="x_g_sonc_dit_nsw22.net_analyst" name="x_g_sonc_dit_nsw22.net_analyst">ac1114c71b30b8107294db1ee54bcb88</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

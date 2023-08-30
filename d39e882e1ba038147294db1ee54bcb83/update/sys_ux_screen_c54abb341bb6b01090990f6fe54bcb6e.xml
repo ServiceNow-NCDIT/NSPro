@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="NSPro Provisioning Config">f509957cb6a638546edabcd8cd9f0f53</app_config>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="NSProThemeTest">704abb341bb6b01090990f6fe54bcb6b</macroponent>
+        <macroponent_config>{
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config>
+        <name>NSProThemeTest default</name>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <required_translations>[]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="NSProThemeTest">744a77381b76b01090990f6fe54bcb70</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-09-22 18:33:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c54abb341bb6b01090990f6fe54bcb6e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>NSProThemeTest default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ux_screen_c54abb341bb6b01090990f6fe54bcb6e</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-09-22 18:44:19</sys_updated_on>
+    </sys_ux_screen>
+</record_update>

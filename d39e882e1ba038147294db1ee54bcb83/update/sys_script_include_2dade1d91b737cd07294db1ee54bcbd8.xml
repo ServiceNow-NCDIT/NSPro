@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_g_sonc_dit_nsw22.NcditNsw2UtilsClient</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>This is for client callable functions that can be used with client scripts like from the nspro client portal. They are separate from NcditNsw2Utils becuae that have "client callable" selected and thus do not have an initialize function.</description>
+        <name>NcditNsw2UtilsClient</name>
+        <script><![CDATA[var NcditNsw2UtilsClient = Class.create();
+NcditNsw2UtilsClient.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    /*
+    These functions are meant to be called using ajax from client side. They are here so they can be reusable.
+    Functions are called with : x_g_sonc_dit_nsw22.NcditNsw2UtilsClient
+    The function name is set using the line: detailsAjax.addParam('sysparm_name', 'getServiceListByHACat');
+    Like:
+        var detailsAjax = new GlideAjax('x_g_sonc_dit_nsw22.NcditNsw2UtilsClient');
+        detailsAjax.addParam('sysparm_name', 'getServiceListByHACat');
+        detailsAjax.addParam('ha_cat', 'Gold');
+        detailsAjax.getXML(callbackGetSvcDetails);
+
+        Callback
+        function callbackGetSvcDetails(response) {
+            var svcList = response.responseXML.documentElement.getAttribute("answer"); // must use 'answer' here
+            var services = JSON.parse(svcList);
+            console.info("nsw2: at callback for services");
+            //console.info("debug response:", response);
+            console.info("services: ", services);
+
+    */
+
+    getServiceListByHACat: function () {
+        // expects to be called with gold, silver, bronze in parameter named ha_cat
+        // returns a list of service titles and codes for the applicable category.
+        var thisFuncLogPrefix = "nsw2UtilsClient_getServiceListByHACat ";
+        var ha_cat_parm = this.getParameter('ha_cat'); // expect Gold, Silver, Bronze
+        gs.info(thisFuncLogPrefix + ": called with " + ha_cat_parm);
+
+        // selection code goes here
+        // get service def for gold, silver, or bronze
+        //var ret_svcList = {svcList: [{title: 'svc1', svc_code: 'aaa'}, {title: 'svc2', svc_code: 'bbb'}]};
+        var ret_svcList = {
+            svcList: []
+        };
+        var svcDefList = [];
+        var queryString = "";
+        // 8/22/2022 add support for calling with blank ha catory to match any
+        if (ha_cat_parm == 'any') {
+            queryString = "cpe_port_range_low=1^svc_typeCONTAINSWAN";
+        } else {
+            queryString = "cpe_port_range_low=1^svc_typeCONTAINSWAN^svc_ha_category=" + ha_cat_parm;
+        }
+        gs.info(thisFuncLogPrefix + "Service list query = " + queryString);
+        var now_GR = new GlideRecord('x_g_sonc_dit_nsw22_service_definitions');
+        now_GR.orderBy('svc_ha_category'); // Ascending Order
+        now_GR.orderBy('svc_type'); // Ascending Order
+        now_GR.orderBy('media'); // Ascending Order
+        now_GR.orderBy('speed_egress'); // Ascending Order
+        now_GR.addEncodedQuery(queryString);
+        now_GR.query();
+        while (now_GR.next()) {
+            var ret_svcRcd = {
+                svc_title: "",
+                svc_code: ""
+            };
+            ret_svcRcd.svc_code = now_GR.getValue('svc_code');
+            ret_svcRcd.svc_title = now_GR.getValue('svc_title');
+            svcDefList.push(ret_svcRcd);
+        }
+        ret_svcList.svcList = svcDefList;
+
+        var services = JSON.stringify(ret_svcList);
+        gs.info(thisFuncLogPrefix + ": xjax xmit = " + services);
+        return services;
+    },
+
+    getTelcoSvcsAvail4Zip: function () {
+        // called from client via ajax like from quickquote page.
+        // expects 5-digit zip to match telco selection table
+        // will return telco list and supported service category.
+        var thisFuncLogPrefix = "nsw2UtilsClient_getTelcoSvcsAvail4Zip ";
+        var zip_parm = this.getParameter('zip'); // expect 5-digit
+        gs.info(thisFuncLogPrefix + ": called with " + zip_parm);
+
+        var telcoSvcInfo = {
+            zip: zip_parm,
+            telcos: [],
+            svcsAvail: ""
+        };
+        var telcoSvcInfoJson = JSON.stringify(telcoSvcInfo);
+        return telcoSvcInfoJson;
+    },
+
+    getVrfs4user: function () {
+        // returns list fo vrfs for a users agency
+        // rlw 04/27/22 created label with description for dropdown display
+        // rlw 05/03/22 add query to check vrf_usage field. This allows for selective disablement of choice display. (keith request)
+        var thisFuncLogPrefix = "nsw2UtilsClient_getVrfs4user ";
+        var sys_user_id = this.getParameter('sysUserId'); // expect user sysid for requested for
+        gs.info(thisFuncLogPrefix + ": called with " + sys_user_id);
+        // get agency for user
+        var vrfList = [];
+        var userGR = new GlideRecord("sys_user");
+        userGR.addEncodedQuery("sys_id=" + sys_user_id);
+        userGR.query();
+        if (userGR.next()) {
+            var myAgency = userGR.u_agency.sys_id;
+            gs.info(thisFuncLogPrefix + ": vrf search is using agency id " + myAgency);
+            // get matching VRF list
+            var vrfGR = new GlideRecord("x_g_sonc_dit_nsw22_nsw2_vrf_definitions");
+            vrfGR.addEncodedQuery("vrf_usage=1^u_agency=" + myAgency);
+            vrfGR.orderBy('vrf_name'); // add a sort here, 04/27/22
+            vrfGR.query();
+            while (vrfGR.next()) {
+                // 04/27/22 make an object to add to list
+                var vrfOptionObj = {};
+                vrfOptionObj['vrf_name'] = vrfGR.getValue('vrf_name');
+                vrfOptionObj['vrf_label'] = vrfGR.getValue('vrf_name') + ": " + vrfGR.getValue("short_description");
+                vrfList.push(vrfOptionObj);
+            }
+        } else {
+            gs.info(thisFuncLogPrefix + ": no user record for sys_id: " + sys_user_id);
+        }
+        var vrfsJson = JSON.stringify(vrfList);
+        return vrfsJson;
+    },
+
+    getSites4user: function () {
+        // returns list of sites for a users agency
+        var thisFuncLogPrefix = "nsw2UtilsClient_getSites4user ";
+        var sys_user_id = this.getParameter('sysUserId'); // expect user sysid for requested for
+        gs.info(thisFuncLogPrefix + ": called with " + sys_user_id);
+        // get agency for user
+        var siteList = [];
+        var userGR = new GlideRecord("sys_user");
+        userGR.addEncodedQuery("sys_id=" + sys_user_id);
+        userGR.query();
+        if (userGR.next()) {
+            var myAgency = userGR.u_agency.sys_id;
+            var myAgencyName = userGR.u_agency.u_name;
+            gs.info(thisFuncLogPrefix + ": site search is using agency id " + myAgency + " , name: " + myAgencyName);
+            // get matching Site list
+            var siteGR = new GlideRecord("x_g_sonc_dit_nsw22_nsw2_sites");
+            siteGR.addEncodedQuery("active=true^agency_name=" + myAgencyName);
+            siteGR.orderBy('site_name');
+            siteGR.query();
+
+            while (siteGR.next()) {
+                // make an object to add to list
+                var siteOptionObj = {};
+                siteOptionObj['site_sys_id'] = siteGR.getValue('sys_id');
+                siteOptionObj['site_label'] = siteGR.getValue('site_name') + ", " + siteGR.getValue("formatted_address");
+                siteList.push(siteOptionObj);
+            }
+            gs.info(thisFuncLogPrefix + ": Found " + siteList.length.toString() + " matching Site records.");
+        } else {
+            gs.info(thisFuncLogPrefix + ": no user record for sys_id: " + sys_user_id);
+        }
+        var sitesJson = JSON.stringify(siteList);
+        return sitesJson;
+    },
+
+    reqCpeAllocationByFS: function () {
+        var thisFuncLogPrefix = "reqCpeAllocationByFS ";
+        var returnObject = {
+            status: "",
+            message: "",
+            cpe: {
+                model: "",
+                available: false,
+                inStockCount: 0
+            }
+        };
+        var provRcdId = this.getParameter('sysparm_provRcdId'); // use to get prov rcd
+        var fsRcdMsgFromNA = this.getParameter('sysparm_fs_msg');
+        gs.info(thisFuncLogPrefix + "called with prov rcd = " + provRcdId);
+        // get the prov rcd
+        var prGR = new GlideRecord('x_g_sonc_dit_nsw22_nsw2_provisioning_tasks');
+        provRcdFound = prGR.get(provRcdId);
+        gs.info(thisFuncLogPrefix + "provRcdFound = " + provRcdFound);
+        if (provRcdFound) {
+            var prNumber = prGR.getValue('number');
+            gs.info(thisFuncLogPrefix + "called for " + prNumber);
+
+            // call the utils script include from server side here.
+            var nsw2util = new NcditNsw2Utils();
+            gs.info("Calling nsw2Util_reqCpeAllocationByFSFromClient with " + prGR.number + " and msg: " + fsRcdMsgFromNA);
+            var fstResp = nsw2util.nsw2Util_reqCpeAllocationByFSFromClient(prGR, fsRcdMsgFromNA);
+            if (fstResp.status == 'OK') {
+                gs.addInfoMessage(fstResp.message);
+            } else {
+                gs.addErrorMessage("nsw2 server side script to allocate CPE was called and returned " + fstResp.status + " , " + fstResp.message);
+            }
+        }
+
+        returnObject.status = "OK";
+        returnObject.message = "FS request created.";
+        var returnObjectJson = JSON.stringify(returnObject);
+        return returnObjectJson;
+    },
+
+    getSiteSvcsInUse: function () {
+        var thisFuncLogPrefix = "nsw2UtilsClient_getSiteSvcsInUse ";
+        var returnObject = {};
+        var siteRcdId = this.getParameter('sysparm_siteRcdId'); // use to get site rcd
+        gs.info(thisFuncLogPrefix + "called with site rcd = " + siteRcdId);
+        // get the site rcd
+        if (siteRcdId) {
+            // call the utils script include from server side here.
+            var nsw2util = new NcditNsw2Utils();
+            gs.info("Calling nsw2Util_getSiteServicesInUse with " + siteRcdId);
+            var siteSvcResp = nsw2util.nsw2Util_getSiteServicesInUse(siteRcdId);
+            if (siteSvcResp.status == 'OK') {
+                gs.info(thisFuncLogPrefix + "Site svc response message: " + siteSvcResp.message);
+            } else {
+                gs.warn(thisFuncLogPrefix + "Server side util nsw2Util_getSiteServicesInUse was called and returned " + siteSvcResp.status + " , " + siteSvcResp.message);
+            }
+        }
+        returnObject = siteSvcResp;
+        var returnObjectJson = JSON.stringify(returnObject);
+        return returnObjectJson;
+    },
+
+    type: 'NcditNsw2UtilsClient'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-11-12 14:40:31</sys_created_on>
+        <sys_id>2dade1d91b737cd07294db1ee54bcbd8</sys_id>
+        <sys_mod_count>43</sys_mod_count>
+        <sys_name>NcditNsw2UtilsClient</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_script_include_2dade1d91b737cd07294db1ee54bcbd8</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-10-18 20:33:14</sys_updated_on>
+    </sys_script_include>
+</record_update>

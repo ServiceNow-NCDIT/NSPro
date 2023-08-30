@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme">
+    <sys_ux_theme action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>First crack at a NSPro theme</description>
+        <name>NSPro theme 1</name>
+        <parent display_value="Starter Workspace Theme">b109957ca6a6385437de781bfd790654</parent>
+        <sys_class_name>sys_ux_theme</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-09-22 17:37:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>005de7f41b36b01090990f6fe54bcbe9</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>NSPro theme 1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ux_theme_005de7f41b36b01090990f6fe54bcbe9</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-09-22 20:06:25</sys_updated_on>
+        <theme>{&#13;
+    "--now-color_brand--primary": "0,100,100",&#13;
+    "--now-color--neutral-0": "255,255,255",&#13;
+    "--now-color--neutral-1": "246,247,247"&#13;
+}</theme>
+    </sys_ux_theme>
+</record_update>

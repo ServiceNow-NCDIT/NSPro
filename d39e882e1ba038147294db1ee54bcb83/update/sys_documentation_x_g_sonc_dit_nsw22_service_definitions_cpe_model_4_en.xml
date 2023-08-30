@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="cpe_model_4" label="CPE_model_4" language="en" table="x_g_sonc_dit_nsw22_service_definitions">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>cpe_model_4</element>
+            <help/>
+            <hint/>
+            <label>CPE_model_4</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_service_definitions</name>
+            <plural>CPE_model_4s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-21 17:31:40</sys_created_on>
+            <sys_id>602b39771bc3211490990f6fe54bcb47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>CPE_model_4</sys_name>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_documentation_x_g_sonc_dit_nsw22_service_definitions_cpe_model_4_en</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-21 17:31:40</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

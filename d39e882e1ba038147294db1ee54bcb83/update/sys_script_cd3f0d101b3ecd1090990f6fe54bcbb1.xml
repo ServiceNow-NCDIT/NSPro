@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_g_sonc_dit_nsw22_nsw2_fs_tasks</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_g_sonc_dit_nsw22_nsw2_fs_tasks">nsp_activity_type=1^stateCHANGESTO3^EQ<item display_value="New site CPE allocation" endquery="false" field="nsp_activity_type" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item display_value="Closed Complete" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="3"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>nsw2 fs task set cpe serial numbers</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	gs.info('nsw2 fs task set cpe serial numbers BR invoked');
+	// look up the cpe gear that was applied and set serial number field.
+	var myAssetSNs = [];
+	var fsRcdWorkNotes = "";
+	// Field selected_assets will have a list of sys_id for alm_asset table
+	// This routine will also set the corresponding alm_assets and ci
+	// alm_asset state is set to "in transit", substate "pending install", assigned_to set to fs task assigned_to.
+	// asset related ci (serial nuber) will get nsw_site set to the site record sys_id. 
+	var assSysIdList = current.selected_assets.split(',');
+	for (var index = 0; index < assSysIdList.length; index++) {
+		gs.info('nsw2 fs task ' + current.number + ' asset id = ' + assSysIdList[index]);
+		var grAss = new GlideRecord('alm_asset');
+		var returnValue = grAss.get(assSysIdList[index]);
+		if (returnValue) {
+			gs.info('nsw2 serial number ' + grAss.serial_number + ' asset and ci is being modified for nsp fs task ' + current.number);
+			// add serial number to string list so it can be added to task rcd.
+			myAssetSNs.push(grAss.serial_number); 
+
+			// Update asset record. "In transit = 9, In stock = 6, In use = 1, In maintenance = 3"
+			// Make sure it is still set to in stock 6 and available
+			if (grAss.install_status == '6' && grAss.substatus == 'available') {
+				grAss.install_status = '9'; // change it to 9 in transit (if it gets changed now, then the stock room is cleared. so don't do.)
+				grAss.substatus = 'pending_install';
+				grAss.comments = "Status updated from task " + current.number + " by " + current.assigned_to.email;
+				grAss.work_notes = "Status updated from task " + current.number + " by " + current.assigned_to.email;
+				grAss.assigned_to = current.assigned_to; // assign the asset to the fs task record user. uncommented 10/21/22
+				grAss.reserved_for = current.assigned_to; // added because assigned_to is being cleared 10/21/22
+				grAss.update();
+				gs.info('nsw2 serial number ' + grAss.serial_number + ' asset updated for nsp fs task ' + current.number);
+				fsRcdWorkNotes = fsRcdWorkNotes +
+					'Asset serial number ' + grAss.serial_number + ' Status updated to In transit, pending_install' +
+					'\n';
+			} else {
+				gs.warn('nsw2 serial number ' + grAss.serial_number + ' asset NOT updated for nsp fs task ' + current.number);
+			}
+
+			// Update CI record by serial number match
+			var grAssCI = new GlideRecord('cmdb_ci_netgear');
+			grAssCI.addEncodedQuery("serial_number=" + grAss.serial_number);
+			grAssCI.query();
+			if (grAssCI.next()) {
+				// ass ci found
+				gs.info('nsw2 CI with serial number ' + grAssCI.serial_number + ' is being updated for nsp fs task ' + current.number);
+				// set the site reference
+				grAssCI.u_nsw_site = current.parent.site_rcd_ref;
+				// update the asset record
+				grAssCI.update();
+				gs.info('nsw2 CI with serial number ' + grAssCI.serial_number + ' has been updated for nsp fs task ' + current.number);
+				fsRcdWorkNotes = fsRcdWorkNotes + '\n' +
+					'CI with serial number ' + grAss.serial_number + ' site reference has been set to site id ' + current.parent.site_id +
+					'\n';
+			} else {
+				gs.warn('nsw2 asset CI for serial number ' + grAss.serial_number + ' was NOT found for nsp fs task ' + current.number);
+			}
+		}
+	}
+
+	// Update fs task record.
+	current.selected_asset_serial_numbers = myAssetSNs.join();
+	current.work_notes = fsRcdWorkNotes;
+	current.update();
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-04-07 13:03:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cd3f0d101b3ecd1090990f6fe54bcbb1</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>nsw2 fs task set cpe serial numbers</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_script_cd3f0d101b3ecd1090990f6fe54bcbb1</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-10-21 17:45:43</sys_updated_on>
+        <template/>
+        <when>async_always</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=cd3f0d101b3ecd1090990f6fe54bcbb1"/>
+</record_update>

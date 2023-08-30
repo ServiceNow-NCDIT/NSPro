@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_g_sonc_dit_nsw22_nsw2_port_connections" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_g_sonc_dit_nsw22_nsw2_port_connections" element="NULL" name="x_g_sonc_dit_nsw22_nsw2_port_connections" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ae5025461b19fc5090990f6fe54bcba0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:59:13</sys_created_on>
+            <sys_id>ea5025461b19fc5090990f6fe54bcba1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:59:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>site_id</element>
+            <list_id display_value="x_g_sonc_dit_nsw22_nsw2_port_connections" element="NULL" name="x_g_sonc_dit_nsw22_nsw2_port_connections" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ae5025461b19fc5090990f6fe54bcba0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:59:13</sys_created_on>
+            <sys_id>6e5025461b19fc5090990f6fe54bcba1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:59:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>a_device_name</element>
+            <list_id display_value="x_g_sonc_dit_nsw22_nsw2_port_connections" element="NULL" name="x_g_sonc_dit_nsw22_nsw2_port_connections" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ae5025461b19fc5090990f6fe54bcba0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:59:13</sys_created_on>
+            <sys_id>ee5025461b19fc5090990f6fe54bcba1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:59:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>a_device_intf_name</element>
+            <list_id display_value="x_g_sonc_dit_nsw22_nsw2_port_connections" element="NULL" name="x_g_sonc_dit_nsw22_nsw2_port_connections" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ae5025461b19fc5090990f6fe54bcba0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:59:13</sys_created_on>
+            <sys_id>625025461b19fc5090990f6fe54bcba2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:59:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>a_ip_address</element>
+            <list_id display_value="x_g_sonc_dit_nsw22_nsw2_port_connections" element="NULL" name="x_g_sonc_dit_nsw22_nsw2_port_connections" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ae5025461b19fc5090990f6fe54bcba0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:59:13</sys_created_on>
+            <sys_id>e25025461b19fc5090990f6fe54bcba2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:59:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>a_vpivci</element>
+            <list_id display_value="x_g_sonc_dit_nsw22_nsw2_port_connections" element="NULL" name="x_g_sonc_dit_nsw22_nsw2_port_connections" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ae5025461b19fc5090990f6fe54bcba0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:59:13</sys_created_on>
+            <sys_id>665025461b19fc5090990f6fe54bcba2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:59:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>a_circuit_id</element>
+            <list_id display_value="x_g_sonc_dit_nsw22_nsw2_port_connections" element="NULL" name="x_g_sonc_dit_nsw22_nsw2_port_connections" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ae5025461b19fc5090990f6fe54bcba0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:59:13</sys_created_on>
+            <sys_id>e65025461b19fc5090990f6fe54bcba2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:59:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>z_circuit_id</element>
+            <list_id display_value="x_g_sonc_dit_nsw22_nsw2_port_connections" element="NULL" name="x_g_sonc_dit_nsw22_nsw2_port_connections" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ae5025461b19fc5090990f6fe54bcba0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:59:13</sys_created_on>
+            <sys_id>2650e50e1b19fc5090990f6fe54bcb89</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:59:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>z_vpivci</element>
+            <list_id display_value="x_g_sonc_dit_nsw22_nsw2_port_connections" element="NULL" name="x_g_sonc_dit_nsw22_nsw2_port_connections" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ae5025461b19fc5090990f6fe54bcba0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:59:13</sys_created_on>
+            <sys_id>a650e50e1b19fc5090990f6fe54bcb89</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:59:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>z_ip_address</element>
+            <list_id display_value="x_g_sonc_dit_nsw22_nsw2_port_connections" element="NULL" name="x_g_sonc_dit_nsw22_nsw2_port_connections" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ae5025461b19fc5090990f6fe54bcba0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:59:13</sys_created_on>
+            <sys_id>2a50e50e1b19fc5090990f6fe54bcb89</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:59:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>z_device_intf_name</element>
+            <list_id display_value="x_g_sonc_dit_nsw22_nsw2_port_connections" element="NULL" name="x_g_sonc_dit_nsw22_nsw2_port_connections" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ae5025461b19fc5090990f6fe54bcba0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:59:13</sys_created_on>
+            <sys_id>aa50e50e1b19fc5090990f6fe54bcb89</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:59:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>z_device_name</element>
+            <list_id display_value="x_g_sonc_dit_nsw22_nsw2_port_connections" element="NULL" name="x_g_sonc_dit_nsw22_nsw2_port_connections" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ae5025461b19fc5090990f6fe54bcba0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:59:13</sys_created_on>
+            <sys_id>2e50e50e1b19fc5090990f6fe54bcb89</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:59:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>install_status</element>
+            <list_id display_value="x_g_sonc_dit_nsw22_nsw2_port_connections" element="NULL" name="x_g_sonc_dit_nsw22_nsw2_port_connections" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ae5025461b19fc5090990f6fe54bcba0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:59:13</sys_created_on>
+            <sys_id>ae50e50e1b19fc5090990f6fe54bcb89</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:59:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_g_sonc_dit_nsw22_nsw2_port_connections" element="NULL" name="x_g_sonc_dit_nsw22_nsw2_port_connections" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ae5025461b19fc5090990f6fe54bcba0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>13</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:59:13</sys_created_on>
+            <sys_id>2250e50e1b19fc5090990f6fe54bcb8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:59:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_g_sonc_dit_nsw22_nsw2_port_connections</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-07-13 14:59:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ae5025461b19fc5090990f6fe54bcba0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_dit_nsw22_nsw2_port_connections</sys_name>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_ui_list_x_g_sonc_dit_nsw22_nsw2_port_connections_null</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-07-13 14:59:13</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

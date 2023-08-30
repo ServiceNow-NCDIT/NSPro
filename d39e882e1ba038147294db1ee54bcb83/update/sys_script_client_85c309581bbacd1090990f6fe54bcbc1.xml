@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Validates completion before allowing complete.&#13;
+Handles new type.</description>
+        <field>state</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>nsp verify fs cpe task fields</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    //Type appropriate comment here, and begin script below
+    jslog("nsp: running nsp verify cpe... state newValue: " + newValue);
+    var thisRcdType = g_form.getValue('nsp_activity_type');
+    if (thisRcdType == '1') {
+        // activity type is for new site cpe allocation request.
+        jslog("nsp: checking cpe before allowing complete...");
+        var selAssList = [];
+        if (newValue == 3) {
+            // new state value is closed complete
+            var selAssField = g_form.getValue('selected_assets');
+            jslog("nsp: checking selected_assets...");
+            if (selAssField != '') {
+                selAssList = selAssField.split(',');
+            }
+            // 10/21/22 now that we have both lan and wan devices supported, we need to look at both counts
+            // to make sure the fs tech has assign the right number of devices.
+            var reqWanCpeCount = parseInt(g_form.getValue('required_wan_cpe_count'));
+            var reqLanCpeCount = parseInt(g_form.getValue('required_lan_cpe_count'));
+            var totalDevCount = reqWanCpeCount + reqLanCpeCount;
+            jslog('nsp: selected assets count is ' + selAssList.length.toString() + ' Should be ' + totalDevCount.toString());
+            if (selAssList.length != totalDevCount) {
+                // don't let the use close this yet
+                g_form.setValue('state', 2); // set to in progress
+                var popup = alert('You must select ' + totalDevCount.toString() + ' CPE model(s) to close this task.');
+                if (popup == true) {
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                // make sure assigned to is also set.
+                var assTo = g_form.getValue('assigned_to');
+                if (assTo == '' || assTo == null) {
+                    var popup = alert('You must set assigned_to value to close this task.');
+                    if (popup == true) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+            }
+        }
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-04-07 12:14:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>85c309581bbacd1090990f6fe54bcbc1</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>nsp verify fs cpe task fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_script_client_85c309581bbacd1090990f6fe54bcbc1</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-10-21 17:12:47</sys_updated_on>
+        <table>x_g_sonc_dit_nsw22_nsw2_fs_tasks</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmn_map_marker">
+    <cmn_map_marker action="INSERT_OR_UPDATE">
+        <coordinate_definition display_value="nsw2 pop loc cd">fb0f930f1bfa78507294db1ee54bcb61</coordinate_definition>
+        <data_item display_value="nsw2 pop location">461e03071b7a78507294db1ee54bcb5c</data_item>
+        <data_item_table>cmn_location</data_item_table>
+        <display_field/>
+        <display_value_script><![CDATA[(function(current) {
+  answer = "";
+})(current);]]></display_value_script>
+        <name>nsw2 pop loc marker</name>
+        <sys_class_name>cmn_map_marker</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-09-29 16:22:55</sys_created_on>
+        <sys_id>beae57cb1bfa78507294db1ee54bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>nsw2 pop loc marker</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>cmn_map_marker_beae57cb1bfa78507294db1ee54bcbce</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-09-29 16:22:55</sys_updated_on>
+        <title_type>default</title_type>
+    </cmn_map_marker>
+</record_update>

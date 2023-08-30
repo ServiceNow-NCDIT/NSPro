@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="vrf_usage" label="VRF usage" language="en" table="x_g_sonc_dit_nsw22_nsw2_vrf_definitions">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>vrf_usage</element>
+            <help/>
+            <hint/>
+            <label>VRF usage</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_vrf_definitions</name>
+            <plural>VRF usages</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-04-29 19:38:37</sys_created_on>
+            <sys_id>d72b75b71bc3211490990f6fe54bcbbd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>VRF usage</sys_name>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_documentation_x_g_sonc_dit_nsw22_nsw2_vrf_definitions_vrf_usage_en</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-04-29 19:38:37</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

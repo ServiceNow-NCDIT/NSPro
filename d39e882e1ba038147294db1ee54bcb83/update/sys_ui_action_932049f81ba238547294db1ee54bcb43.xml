@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>nsw2_create_site_location</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments>This will call a script include to create site and location records from address info.</comments>
+        <condition>(current.request_type == '1' || current.request_type == '2') &amp;&amp; current.site_id &gt; '0' &amp;&amp; current.site_rcd_ref == "" </condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>destructive</form_style>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint>Click to create site and location records using site_id, address info</hint>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Create Site and Location</name>
+        <onclick/>
+        <order>200</order>
+        <script><![CDATA[action.setRedirectURL(current);
+current.update();
+if (! current.isActionAborted()) {
+	// call a script include to perform the work
+	// Instantiate the nsw2 utilities
+	var nsw2util = new NcditNsw2Utils();
+	var createRcdsResp = nsw2util.nsw2Util_createSiteAndLoc(current);
+	if (createRcdsResp.status == 'OK') {
+		gs.addInfoMessage("nsw2 server side script created site " + createRcdsResp.siteId + ", " + createRcdsResp.siteRcdId);
+		// current rcd updates added 7/26/22 rw.
+		current.work_notes = "New site record created for: " + createRcdsResp.siteId + ", Location sys_id: " + createRcdsResp.locRcdId;
+		current.location = createRcdsResp.locRcdId;
+		current.update();
+	} else {
+		gs.addErrorMessage("nsw2 server side script to created site and loc was called and returned " + createRcdsResp.status + " , " + createRcdsResp.message);
+	}
+	
+	// redirect to here
+    action.setRedirectURL(current);
+}
+]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-09-09 18:50:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>932049f81ba238547294db1ee54bcb43</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Create Site and Location</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ui_action_932049f81ba238547294db1ee54bcb43</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-07-26 14:04:04</sys_updated_on>
+        <table>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

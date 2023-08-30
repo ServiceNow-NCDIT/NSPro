@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>featureRoutes</name>
+        <page display_value="NSPro Provisioning">7509957c5ea638542494a2c58c548655</page>
+        <required_translations>[ ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-05-14 22:50:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>790975d41b6b011090990f6fe54bcbad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>featureRoutes</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ux_page_property_790975d41b6b011090990f6fe54bcbad</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-05-14 22:50:05</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_g_sonc_dit_nsw22.7509957c5ea638542494a2c58c548655.root.featureRoutes</unique_name>
+        <value>{"record":{"_default":{"routeInfo":{"route":"record","fields":[{"name":"table","mapping":{"address":"table"}},{"name":"sysId","mapping":{"address":"sysId"}}],"params":[{"name":"query","mapping":{"address":"query"}},{"name":"extraParams","mapping":{"address":"extraParams"}}]}}},"list":{"_default":{"routeInfo":{"route":"list","fields":[],"params":[{"name":"listId","mapping":{"address":"listId"}},{"name":"configId","mapping":{"address":"configId"}},{"name":"tinyId","mapping":{"address":"tinyId"}}]}}}}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=790975d41b6b011090990f6fe54bcbad"/>
+</record_update>

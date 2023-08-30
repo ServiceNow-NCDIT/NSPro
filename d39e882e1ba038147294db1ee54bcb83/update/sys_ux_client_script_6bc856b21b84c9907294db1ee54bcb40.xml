@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes>92f0b20b1bcc099090990f6fe54bcbea</includes>
+        <macroponent display_value="quickquote">3fa869ba1bcc89907294db1ee54bcb19</macroponent>
+        <name>query4servicesByZip</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, event, helpers, imports}) {
+    // use zip code from form
+    const {nsw2GetTelcoAvailSvcs4Zip} = imports['x_g_sonc_dit_nsw22.QuickquoteInclude']();
+    // call to get list of applicable services.
+    //console.info("call ux script include for services...");
+	//api.setState('qqStatusMsg', "calling for services");
+	
+	//console.log(JSON.stringify(event,null,4)); // for debug
+	const myzip = event.payload.value;
+
+	api.setState('zip2Search', myzip);
+	
+	const svcOptionsList = [];
+	api.setState('ditNsServiceOptions', svcOptionsList);
+
+	api.setState('telcoSelectFilter', "zip=" + myzip);
+	api.data.look_up_telcos.refresh();
+	
+	return;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-11-29 19:53:58</sys_created_on>
+        <sys_id>6bc856b21b84c9907294db1ee54bcb40</sys_id>
+        <sys_mod_count>93</sys_mod_count>
+        <sys_name>query4servicesByZip</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ux_client_script_6bc856b21b84c9907294db1ee54bcb40</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-12-10 19:06:29</sys_updated_on>
+        <target/>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

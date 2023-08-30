@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p>&nbsp;</p>
+<p><img style="align: baseline;" src="nspro_logo_211103_rf.pngx" width="205" height="100" align="baseline" /></p>
+<p><span style="font-size: 18pt;">NC DIT Network Services Provisioning System</span></p>
+<p><span style="font-size: 18pt;"><strong>Network Service Quotation</strong></span></p>
+<p><span style="font-size: 12pt;">Number: ${number},&nbsp;Site name: ${site_name}</span></p>
+<p><span style="font-size: 12pt;">Requested service codes: ${requested_service_codes}</span></p>
+<p><span style="font-size: 12pt;">Opened: ${opened_at}, by: ${opened_by}</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt;">Dear ${opened_by},</span></p>
+<p><span style="font-size: 12pt;">You request for service was received. Based on the information supplied in your request, the system has calculated an estimate for the monthly cost for the service. Please understand this represents only an estimate. Actual costs may change as more details about the requirements and implementation are discovered. Also, keep in mind that all new service requests will incur a $500.00 one-time installation charge in addition to the recurring monthly amount estimated here.&nbsp;</span></p>
+<p><span style="font-size: 14pt;"><strong>Requested Service:&nbsp; ${quoted_service_title}<br /></strong></span></p>
+<p><span style="font-size: 12pt;"><strong><span style="font-size: 14pt;">Your monthly estimate is:&nbsp; $ ${quoted_cost}</span><br /></strong></span></p>
+<p><span style="font-size: 12pt;"><strong><span style="font-size: 14pt;">Bill code: ${bill_code}<br /></span></strong></span></p>
+<p><span style="font-size: 12pt;">You (and the person listed as the "requested for" if other than yourself) will receive a separate notice for Approval of your request. If you approve, the task will move on to a network analyst for provisioning. You may, instead, reject the request as submitted and the task will be canceled and no further activity will take place. Both the requester and the requested for persons must approve for the task to continue.</span></p>
+<p><span style="font-size: 12pt;">You may also Approve or Reject from the nspro client portal here:</span></p>
+<p><span style="font-size: 12pt;"><a href="https://ncgovappdev.servicenowservices.com/x/g/dit-nspro/landing">https://ncgovappdev.servicenowservices.com/x/g/dit-nspro/landing</a>&nbsp;</span></p>
+<p><span style="font-size: 12pt;">Please refer to the nspro client portal for status and other information.</span></p>
+<p><span style="font-size: 12pt;">Thanks for letting us serve you.</span></p>
+<p><span style="font-size: 12pt;">Regards,</span></p>
+<p><span style="font-size: 12pt;">your friendly nspro automation system</span></p>
+<p><span style="font-size: 8pt;">&nbsp;&nbsp;</span></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>nspro quote template</name>
+        <sms_alternate/>
+        <subject>nspro service quote for ${number}: ${site_name}</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-12-14 14:29:58</sys_created_on>
+        <sys_id>f9fad62f1b5c015490990f6fe54bcb30</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>nspro quote template</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sysevent_email_template_f9fad62f1b5c015490990f6fe54bcb30</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-07-25 15:26:57</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

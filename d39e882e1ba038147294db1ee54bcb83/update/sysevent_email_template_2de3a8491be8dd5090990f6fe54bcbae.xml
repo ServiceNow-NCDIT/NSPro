@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p><img style="align: baseline;" src="nspro_logo_211103_rf.pngx" width="205" height="100" align="baseline" /></p>
+<p><span style="font-size: 18pt;">NC DIT Network Services Provisioning System</span></p>
+<p><span style="font-size: 18pt;"><strong>Network Service Circuit Terminate Request</strong></span></p>
+<p><span style="font-size: 18pt;"><strong><span style="font-size: 12pt;">NCDIT Task Number: ${number}</span></strong></span></p>
+<p><span style="font-size: 18pt;"><strong><span style="font-size: 12pt;">Site ID: ${site_id}<br /></span></strong></span></p>
+<p><span style="font-size: 18pt;"><strong><span style="font-size: 12pt;">Site name: ${site_rcd_ref.site_name}</span></strong></span></p>
+<p><span style="font-size: 18pt;"><strong><span style="font-size: 12pt;">Order submit date: ${circuit_order_sent_date}<br /></span></strong></span></p>
+<p><span style="font-size: 12pt;">Netplus Number (W/O):&nbsp;</span></p>
+<p><span style="font-size: 12pt;">DIT Acct Number:&nbsp;<br /></span></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: 14pt;">Order details =============================</span></strong></p>
+<p><span style="font-size: 12pt;">Telco vendor Name: ${telco_vendor}</span></p>
+<p><span style="font-size: 12pt;">DIT Service Type (Managed, Non-managed, Schools): Managed</span></p>
+<p><span style="font-size: 12pt;">Vendor Acct Number:</span></p>
+<p><span style="font-size: 12pt;">Circuit order req type: ${circuit_order_req_type}<br /></span></p>
+<p><span style="font-size: 12pt;">Circuit type:</span></p>
+<p><span style="font-size: 12pt;">Circuit ord req needby date: ${circuit_ord_req_needby_date}<br /></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt;">Circuit No: &nbsp;${circuit_id}</span></p>
+<p><span style="font-size: 12pt;">Requested speed: ${requested_speed}</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt;">Comments or instructions:</span></p>
+<p><span style="font-size: 12pt;">${circuit_special_instructions}</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt;">Site name: ${site_rcd_ref.site_name}<br /></span></p>
+<p><span style="font-size: 12pt;">Street: ${req_addr_street}<br /></span></p>
+<p><span style="font-size: 12pt;">City: ${req_addr_city}<br /></span></p>
+<p><span style="font-size: 12pt;">Zip: ${req_addr_zip}</span></p>
+<p><span style="font-size: 12pt;">Demarc location: ${req_demarc_loc}<br /></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt;">Site contact name: ${req_site_contact_pri.name}<br /></span></p>
+<p><span style="font-size: 12pt;">Site contact phone: ${req_site_contact_pri.phone}<br /></span></p>
+<p><span style="font-size: 12pt;">Site contact email: ${req_site_contact_pri.email}</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt;">NC DIT Provisioning Analyst: ${assigned_to.name}<br /></span></p>
+<p><span style="font-size: 12pt;">NC DIT Provisioning Analyst phone: ${assigned_to.phone}<br /></span></p>
+<p><span style="font-size: 12pt;">NC DIT Provisioning Analyst email: ${assigned_to.email}</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 18pt;"><strong><span style="font-size: 12pt;">==================TELCO REPLY HERE===========================</span></strong></span></p>
+<p><span style="font-size: 18pt;"><strong><span style="font-size: 12pt;">=== COPY THIS SECTION TO YOUR REPLY EMAIL BODY AND FILL IN DATA AFTER : === </span></strong></span></p>
+<p><span style="font-size: 12pt;">Acknowledge order received:&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt;">Circuit id:&nbsp;</span></p>
+<p><span style="font-size: 12pt;">Circuit due date:&nbsp;</span></p>
+<p><span style="font-size: 12pt;">Circuit complete date:&nbsp;</span></p>
+<p><span style="font-size: 12pt;">Telco order number:&nbsp;</span></p>
+<p><span style="font-size: 12pt;">Comments:&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt;">Total cost:&nbsp;</span></p>
+<p><span style="font-size: 12pt;">Monthly circuit cost:&nbsp;</span></p>
+<p><span style="font-size: 12pt;">Construction cost:&nbsp;</span></p>
+<p><span style="font-size: 12pt;">Other one-time cost:&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 18pt;"><strong><span style="font-size: 12pt;">========================================================</span></strong></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt;">#ENDOFDATA</span></p>
+<p>&nbsp;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>nspro circuit order req delete pri</name>
+        <sms_alternate/>
+        <subject>State of NC DIT Circuit Order Request (NCDIT Task ${number}, Telco ${telco_name})</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-07-05 17:36:23</sys_created_on>
+        <sys_id>2de3a8491be8dd5090990f6fe54bcbae</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>nspro circuit order req delete pri</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sysevent_email_template_2de3a8491be8dd5090990f6fe54bcbae</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2023-03-14 18:54:06</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

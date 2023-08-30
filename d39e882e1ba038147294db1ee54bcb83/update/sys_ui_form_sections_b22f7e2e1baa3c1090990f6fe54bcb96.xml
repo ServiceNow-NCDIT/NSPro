@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="b22f7e2e1baa3c1090990f6fe54bcb96" sys_domain="global" table="x_g_sonc_dit_nsw22_nsw2_sites" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-15 14:28:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f62f7e2e1baa3c1090990f6fe54bcb99</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_sonc_dit_nsw22_nsw2_sites" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">b22f7e2e1baa3c1090990f6fe54bcb96</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6143f8261b6838147294db1ee54bcb5b</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-15 14:28:55</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-15 14:34:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ae804fee1baa3c1090990f6fe54bcb9f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_sonc_dit_nsw22_nsw2_sites" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">b22f7e2e1baa3c1090990f6fe54bcb96</sys_ui_form>
+            <sys_ui_section caption="Address" display_value="Address" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">6e804fee1baa3c1090990f6fe54bcb6a</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-15 14:34:55</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-15 14:28:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f22f7e2e1baa3c1090990f6fe54bcb9a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_sonc_dit_nsw22_nsw2_sites" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">b22f7e2e1baa3c1090990f6fe54bcb96</sys_ui_form>
+            <sys_ui_section caption="Comments" display_value="Comments" name="x_g_sonc_dit_nsw22_nsw2_sites" sys_domain="global" view="Default view">322f7e2e1baa3c1090990f6fe54bcb94</sys_ui_section>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-15 14:34:55</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_g_sonc_dit_nsw22_nsw2_sites</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-15 14:28:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b22f7e2e1baa3c1090990f6fe54bcb96</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_dit_nsw22_nsw2_sites</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_ui_form_sections_b22f7e2e1baa3c1090990f6fe54bcb96</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-15 14:28:55</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

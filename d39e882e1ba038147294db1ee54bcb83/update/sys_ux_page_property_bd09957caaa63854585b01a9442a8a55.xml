@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>listConfigId</name>
+        <page display_value="NSPro Provisioning">7509957c5ea638542494a2c58c548655</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-09-09 20:33:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>bd09957caaa63854585b01a9442a8a55</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>listConfigId</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ux_page_property_bd09957caaa63854585b01a9442a8a55</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-09-09 20:33:19</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_g_sonc_dit_nsw22.7509957c5ea638542494a2c58c548655.root.listConfigId</unique_name>
+        <value>3d09957c1ba638547294db1ee54bcb82</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=bd09957caaa63854585b01a9442a8a55"/>
+</record_update>

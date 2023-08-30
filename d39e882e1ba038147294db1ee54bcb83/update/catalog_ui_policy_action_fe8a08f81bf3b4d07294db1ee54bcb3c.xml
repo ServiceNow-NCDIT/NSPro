@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="NSPro New Site Request">896a88191b3274107294db1ee54bcb96</catalog_item>
+        <catalog_variable>IO:f215d9bc1b63fc1090990f6fe54bcb37</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-11-10 18:10:23</sys_created_on>
+        <sys_id>fe8a08f81bf3b4d07294db1ee54bcb3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>req_network_service_category</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_fe8a08f81bf3b4d07294db1ee54bcb3c</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-11-10 18:10:23</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Set service category to Guaranteed if HA yes">b32a00781bf3b4d07294db1ee54bcbb3</ui_policy>
+        <variable>req_network_service_category</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>

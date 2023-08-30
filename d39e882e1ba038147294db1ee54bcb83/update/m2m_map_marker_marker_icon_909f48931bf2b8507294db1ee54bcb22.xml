@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_map_marker_marker_icon">
+    <m2m_map_marker_marker_icon action="INSERT_OR_UPDATE">
+        <marker display_value="nsw2 pop loc marker">beae57cb1bfa78507294db1ee54bcbce</marker>
+        <marker_icon display_value="dit nsw2 pop icon">df10ab8f1bfa78507294db1ee54bcbe7</marker_icon>
+        <sys_class_name>m2m_map_marker_marker_icon</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-09-29 19:53:19</sys_created_on>
+        <sys_id>909f48931bf2b8507294db1ee54bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>m2m_map_marker_marker_icon_909f48931bf2b8507294db1ee54bcb22</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-09-29 19:53:19</sys_updated_on>
+    </m2m_map_marker_marker_icon>
+</record_update>

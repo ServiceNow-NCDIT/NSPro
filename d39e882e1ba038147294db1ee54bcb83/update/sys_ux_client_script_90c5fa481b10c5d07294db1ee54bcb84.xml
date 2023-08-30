@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="quickquote">3fa869ba1bcc89907294db1ee54bcb19</macroponent>
+        <name>returnFromTelcoZipQuery</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, event, helpers, imports}) {
+    // run after query for telco selection by zip
+    const funcName = "returnFromTelcoZipQuery ";
+    console.info(funcName + "was called");
+    const lastFetchWorked2 = api.data.look_up_telcos.lifecycle.lastFetchSucceeded;	
+	const ts_result = api.data.look_up_telcos.results[0];
+	var avSvcText = "";
+	console.info(funcName + "ts_result is ", ts_result, "last fetch", lastFetchWorked2);
+
+	// check for no contract
+	if (ts_result.providerpriority1.displayValue == "NoContract") {
+		console.info(funcName, "No contract for", ts_result.zip.displayValue);
+		// Drive modal here.
+		helpers.modal.open("alert_1");
+	} else {
+		const avSvc = ts_result.available_services.value;
+		const avProviderCount = ts_result.providercount.value;
+		avSvcText = ts_result.available_services.displayValue;
+		console.info("zip data: av svc = " + avSvc + ", " + avSvcText );
+		if (avSvc == 2) {
+			// best effort
+			api.setState('svcCodeMatch', "BCB");
+		} else if (avSvc == 1) {
+			api.setState('svcCodeMatch', "W");
+		}
+		if (avProviderCount <= 1) {
+			api.setState('qqInstruction2', 'Gold service is unavailable for this Zip at this time');
+		} else {
+			api.setState('qqInstruction2', "");
+		}
+		api.setState('qqInstruction', 'Choose a service by clicking on a "Svc title" below');
+	}
+	const dataInfoText = "dataInfo " + avSvcText + ", provCount = " +
+		ts_result.providercount.displayValue + ", " +
+		ts_result.providerpriority1.displayValue + ", " +
+		ts_result.providerpriority2.displayValue;
+	api.setState('dataInfo', dataInfoText);
+
+    return;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-12-03 19:12:51</sys_created_on>
+        <sys_id>90c5fa481b10c5d07294db1ee54bcb84</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>returnFromTelcoZipQuery</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ux_client_script_90c5fa481b10c5d07294db1ee54bcb84</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-09-19 17:55:48</sys_updated_on>
+        <target/>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

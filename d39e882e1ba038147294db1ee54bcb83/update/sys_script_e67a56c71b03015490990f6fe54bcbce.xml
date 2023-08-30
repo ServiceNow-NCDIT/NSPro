@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks">circuit_order_sent_dateVALCHANGES^ORcircuit_order_sent_date_2VALCHANGES^request_type=1^EQ<item endquery="false" field="circuit_order_sent_date" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="circuit_order_sent_date_2" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item display_value="New" endquery="false" field="request_type" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>nsw2 set due date based on circ ord sent</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var funcName = "nsw2 BR: set due date based on circ ord sent: ";
+	var daysUntilDue = 90;
+	gs.info(funcName + "called. Using daysUntilDue of " + daysUntilDue + " days.");
+	gs.info(funcName + ", " +
+			"current cir ord sent = " + current.circuit_order_sent_date.toString() +
+			", previous cir ord sent = " + previous.circuit_order_sent_date.toString() +
+			", current cir ord sent 2 = " + current.circuit_order_sent_date_2.toString() +
+			", previous cir ord sent 2 = " + previous.circuit_order_sent_date_2.toString() );
+
+	var newDueDate = new GlideDateTime(current.circuit_order_sent_date);
+	// see what value changed
+	if (current.circuit_order_sent_date != previous.circuit_order_sent_date) {
+		newDueDate.addDaysLocalTime(daysUntilDue);
+		current.due_date = newDueDate;
+	} else {
+		newDueDate = new GlideDateTime(current.circuit_order_sent_date_2);
+		newDueDate.addDaysLocalTime(daysUntilDue);
+		current.due_date = newDueDate;
+	}
+	current.update(); // 08/22/22 leave this for run after
+	gs.info(funcName + "prov rcd " + current.number + " DUE DATE set to " + newDueDate.toString() + ". " + daysUntilDue + " days from circ ord sent.");
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-04-28 18:03:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e67a56c71b03015490990f6fe54bcbce</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>nsw2 set due date based on circ ord sent</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_script_e67a56c71b03015490990f6fe54bcbce</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-08-23 17:42:15</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=e67a56c71b03015490990f6fe54bcbce"/>
+</record_update>

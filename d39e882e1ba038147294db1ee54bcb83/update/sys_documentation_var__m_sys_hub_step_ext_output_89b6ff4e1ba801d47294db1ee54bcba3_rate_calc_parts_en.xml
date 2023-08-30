@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="rate_calc_parts" label="rate_calc_parts" language="en" table="var__m_sys_hub_step_ext_output_89b6ff4e1ba801d47294db1ee54bcba3">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>rate_calc_parts</element>
+            <help/>
+            <hint/>
+            <label>rate_calc_parts</label>
+            <language>en</language>
+            <name>var__m_sys_hub_step_ext_output_89b6ff4e1ba801d47294db1ee54bcba3</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-12-22 18:08:09</sys_created_on>
+            <sys_id>792ddc1a1b2041d47294db1ee54bcb69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>rate_calc_parts</sys_name>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_89b6ff4e1ba801d47294db1ee54bcba3_rate_calc_parts_en</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-12-22 18:08:09</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

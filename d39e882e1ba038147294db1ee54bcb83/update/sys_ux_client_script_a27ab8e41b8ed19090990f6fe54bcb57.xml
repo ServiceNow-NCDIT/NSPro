@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="quickquote_lwl">cf20fe0c1bca119090990f6fe54bcb1e</macroponent>
+        <name>getLanWlanCpeCosts</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    // runs after data fetch from service def table
+    // get all of the values and make a local table to reference on the page
+    console.log("getLanWlanCpeCosts triggered to run after data fetch");
+    console.log("we got " + api.data.look_up_records_1.results.length + " data records");
+    var cpeCostsObject = {};
+    for (var i = 0; i < api.data.look_up_records_1.results.length; i++) {
+        console.log("data is :", api.data.look_up_records_1.results[i]);
+        cpeCostsObject[api.data.look_up_records_1.results[i]['svc_code']['value']] = api.data.look_up_records_1.results[i]['cpm_cpe']['value'].toFixed(2);
+    }
+    console.log("got cpe values: ", JSON.stringify(cpeCostsObject));
+    api.setState('cpeValues', JSON.stringify(cpeCostsObject));
+    api.setState('LANB4', "$ " + cpeCostsObject['LANB4']);
+    api.setState('LANB48', "$ " + cpeCostsObject['LANB48']);
+    api.setState('LANB24', "$ " + cpeCostsObject['LANB24']);
+    api.setState('LANP8', "$ " + cpeCostsObject['LANP8']);
+    api.setState('LANP48', "$ " + cpeCostsObject['LANP48']);
+    api.setState('LANP24', "$ " + cpeCostsObject['LANP24']);
+    api.setState('WLANAP', "$ " + cpeCostsObject['WLANAP']);
+    api.setState('wlanAp_num', cpeCostsObject['WLANAP']);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-09-16 19:32:15</sys_created_on>
+        <sys_id>a27ab8e41b8ed19090990f6fe54bcb57</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>getLanWlanCpeCosts</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ux_client_script_a27ab8e41b8ed19090990f6fe54bcb57</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-09-19 16:55:39</sys_updated_on>
+        <target/>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

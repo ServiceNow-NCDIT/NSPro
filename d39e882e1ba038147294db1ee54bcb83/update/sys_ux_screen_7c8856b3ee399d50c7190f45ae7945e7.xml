@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="nspro client portal Config">748856b37c399d5022aaab43f5871ae7</app_config>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="Additional details">fc8856b397399d503cfe3225fce666e9</macroponent>
+        <macroponent_config>{
+  "sysId" : "@context.props.sysId",
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "none",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config>
+        <name>Additional details Default</name>
+        <order>0</order>
+        <parent_macroponent display_value="Record Page(request)">7c8856b3ed399d5030b426af256ba7f3</parent_macroponent>
+        <required_translations>[]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Additional details">3c8856b3f1399d50b3765704a77daaf2</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-09-14 18:27:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7c8856b3ee399d50c7190f45ae7945e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Additional details Default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ux_screen_7c8856b3ee399d50c7190f45ae7945e7</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-09-14 18:27:51</sys_updated_on>
+    </sys_ux_screen>
+</record_update>

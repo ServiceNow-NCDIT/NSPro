@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_g_sonc_dit_nsw22.capture_cir_ord</event_name>
+        <name>captureOrd2notes</name>
+        <order>100</order>
+        <script><![CDATA[/*
+Locate sent circuit order email and capture it for documentation in the corresponding provisioning record
+work notes/comments.
+*/
+captureOrd2notes(event, current);
+
+function captureOrd2notes(event, current) {
+	// get the prov rcd nuber from the event parm 1
+	var provRcdNum = event.parm1;
+	var provRcdTelcoParms = event.parm2.split(',');
+	var provRcdTelco = provRcdTelcoParms[0];
+	var provRcdTelcoEmail = provRcdTelcoParms[1];
+	gs.info("nsw2 captureOrd2notes script action triggered by event for " + provRcdNum + ", " + provRcdTelco);
+	// find recent emails with subject matching this prov rcd
+	// 	State of NC DIT Circuit Order Request (NCDIT Task DITNSW0001116)
+	// use current circuit_ord_sent_date in search
+	var createdSinceStr = current.circuit_order_sent_date.getDisplayValue();
+	var emailSearchStr = "sys_created_on>=" + createdSinceStr + "^subjectCONTAINS" + provRcdTelco + "^subjectCONTAINS" + provRcdNum;
+	gs.info("nsw2 captureOrd2notes: email search string is " + emailSearchStr);
+	var emailGR = new GlideRecord("sys_email");
+	emailGR.addEncodedQuery(emailSearchStr);
+	emailGR.setLimit(1); //put the max number here
+	emailGR.orderByDesc("sys_created_on");
+	emailGR.query();
+	if (emailGR.next()) {
+		// check body for what we expect
+		gs.info("nsw2 captureOrd2notes found email");
+		/*
+		var emailBody = emailGR.body.toString();
+		// get rid of html related stuff
+		emailBody = emailBody.replace(/<[^>]*>?/gm, '');
+		emailBody = emailBody.replace(/&amp;/gm, '&');
+		emailBody = emailBody.replace(/&nbsp;/gm, '');
+		//emailBody = emailBody.substring(0, emailBody.indexOf('&'));
+		*/
+		// try this 
+		var emailBody = "[code]" + emailGR.body + "[/code]"
+		gs.info("nsw2 captureOrd2notes: matched email to field for " + current.telco_email_for_order);
+		current.work_notes = "circuit order for " + provRcdTelco + " to: " + emailGR.direct + "\n\n" + emailBody;
+		current.update();
+	} else {
+		gs.error("nsw2 captureOrd2notes: no email found for " + provRcdNum + ", " + current.telco_email_for_order);
+	}
+	
+}]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-03-03 17:59:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6c230a051bc685147294db1ee54bcb47</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>captureOrd2notes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sysevent_script_action_6c230a051bc685147294db1ee54bcb47</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-03-08 19:43:08</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="provider_rate_rcds" label="provider rate rcds" language="en" table="var__m_sys_hub_action_input_56187f021be801d47294db1ee54bcbac">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>provider_rate_rcds</element>
+            <help/>
+            <hint/>
+            <label>provider rate rcds</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_56187f021be801d47294db1ee54bcbac</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-12-22 15:26:16</sys_created_on>
+            <sys_id>1618bf021be801d47294db1ee54bcb37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>provider rate rcds</sys_name>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_56187f021be801d47294db1ee54bcbac_provider_rate_rcds_en</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-12-22 15:26:16</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

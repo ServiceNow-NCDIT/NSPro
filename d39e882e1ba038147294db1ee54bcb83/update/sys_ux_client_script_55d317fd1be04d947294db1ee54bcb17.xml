@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="quickquote">3fa869ba1bcc89907294db1ee54bcb19</macroponent>
+        <name>recordSvcCoreAndCpeCosts</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, event, helpers, imports}) {
+    const funcName = "recordSvcCoreAndCpeCosts";
+    console.info(funcName, "called. Current state of svcCodeLookup1:", api.state.svcCodeLookup1);
+
+    const svc_result = api.data.look_up_svcByCode.results[0];
+    console.info(funcName, "svc_result:", svc_result);
+
+    const cpmCpeInfo = svc_result.cpm_cpe;
+    const cpmCoreInfo = svc_result.cpm_core;
+    const svc_code = svc_result.svc_code.value;
+
+    //set client state values for cpe and core costs
+    api.setState('qqCpeCost', cpmCpeInfo.value);
+    api.setState('qqCoreCost', cpmCoreInfo.value);
+    
+    // Due the rest of the cost calculations
+
+    // 02/21/22 modified calculation. Keith says core is on counted once for HA.
+    //var mcost = cpmCpeInfo.value + cpmCoreInfo.value;
+    var mcost = cpmCoreInfo.value; // add in core cost once
+    //console.info(funcName, "mcost stage1:", mcost);
+    
+    // mod 02/21/22 if gold service, add double the cpe
+    var thisIsGold = false;
+    if ("G" == svc_code.charAt(0)) {
+        console.info("calculating: ",
+            cpmCoreInfo.displayValue, "+",
+            cpmCpeInfo.displayValue, " * 2 for Gold");
+        mcost = mcost + (cpmCpeInfo.value * 2);
+        thisIsGold = true;
+    } else {
+        console.info("calculating: ", 
+            cpmCpeInfo.displayValue, "+", 
+            cpmCoreInfo.displayValue);
+        mcost = mcost + cpmCpeInfo.value;
+    }
+    var mcostStr = "$" + mcost.toFixed(2);
+    console.info(funcName, "calculated cpe and core is: ", mcostStr);
+
+    // set cost at this point for later additions
+    api.setState("qqCost", mcost);
+
+    // figure out telco rate by getting telcos and searching rates using svc code suffix 
+
+    const ts_result = api.data.look_up_telcos.results[0];
+    console.info(funcName, "ts_result:", ts_result);
+    var myprov1, myprov2 = "";
+
+    // we need to get the current telco prov in data
+    // 02/22/22 source of provider depends on BE or Guaranteed
+    // available_services = 2, BE or 1, Guaranteed
+    if (ts_result.available_services.value == "1") {
+        myprov1 = ts_result.providerpriority1.displayValue;
+        myprov2 = ts_result.providerpriority2.displayValue;
+    } else {
+        myprov1 = ts_result.beproviderpriority1.displayValue;
+        myprov2 = ts_result.beproviderpriority2.displayValue;
+    }
+
+    const svcCodeSuffix = svc_code.substring(1);
+    const telcoRateSearchStr = "svc_code=" + svcCodeSuffix + "^provider=" + myprov1;
+    console.info(funcName, "searching for telco rate for ", telcoRateSearchStr);
+
+    const restTcRateTable = "/api/now/table/x_g_sonc_dit_nsw22_telcoprov_rates?";
+    // URL special char codes %2C is ',' %3D is '='
+    const restSearch4TelcoRates = "sysparm_query=svc_code%3D" +
+        svcCodeSuffix + "&sysparm_fields=provider%2Ccost";
+
+    helpers.snHttp(restTcRateTable + restSearch4TelcoRates, {
+            method: 'GET'})
+        .then(({response}) => {
+            // do something with the table data
+            //console.info("rest returned:", response);
+            console.info("top 2 priority providers are", myprov1, myprov2);
+            if (thisIsGold) {
+                var provCheckList = [myprov1, myprov2];
+            } else {
+                var provCheckList = [myprov1];
+            }
+        
+            const provCosts4Svc = response.result;
+            //console.info("provCosts4Svc", provCosts4Svc);
+            // if we are pricing for gold service, we need both provider costs.
+            // if it's silver service, just use the one primary match.
+            provCheckList.forEach( function (provi) {
+                for (var i=0; i < provCosts4Svc.length; i++) {
+                    //console.log("checking provi", provi, provCosts4Svc[i]['provider']);
+                    if (provCosts4Svc[i].provider === provi) {
+                        mcost = mcost + parseFloat(provCosts4Svc[i]['cost']);
+                        console.log("adding", provi, provCosts4Svc[i]['cost']);
+                        break;
+                    }
+                }
+            })
+            mcostStr = "$" + mcost.toFixed(2);
+            console.info("calculated cpe and core plus telco is: ", mcostStr);
+             
+            api.setState('qqMCostStr', mcostStr);
+
+        })
+        .catch(({error}) => {
+            const message = `Error: ${error.data.error.message}`;
+            console.error(message);
+            api.emit('NOW_UXF_PAGE#ADD_NOTIFICATIONS', {
+                id: 'alert5',
+                status: 'high',
+                icon: 'info-circle-outline',
+                content: message,
+                action: {
+                    type: 'dismiss'
+                }
+            });
+        });
+
+    return;
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-12-21 18:09:20</sys_created_on>
+        <sys_id>55d317fd1be04d947294db1ee54bcb17</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>recordSvcCoreAndCpeCosts</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ux_client_script_55d317fd1be04d947294db1ee54bcb17</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-03-22 12:41:25</sys_updated_on>
+        <target/>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

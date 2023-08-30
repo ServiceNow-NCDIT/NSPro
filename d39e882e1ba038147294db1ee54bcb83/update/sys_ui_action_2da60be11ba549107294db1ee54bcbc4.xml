@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>nsw2_orderCircuits</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments>This will call a script include to generate circuit order request(s). The trigger emails sent to telco vendor contacts.</comments>
+        <condition>(current.request_type == '1' || current.request_type == '2') &amp;&amp; (current.assigned_pe != '' &amp;&amp; (current.telco_email_for_order != '') &amp;&amp; (current.provisoning_state == '4'))</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>primary</form_style>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint>Click to generate circuit order request(s) via email</hint>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Order circuit(s)</name>
+        <onclick/>
+        <order>400</order>
+        <script><![CDATA[action.setRedirectURL(current);
+current.update();
+if (!current.isActionAborted()) {
+    // call a script include to perform the work
+    // Instantiate the nsw2 utilities
+    var nsw2util = new NcditNsw2Utils();
+    var cirOrdResp = nsw2util.nsw2Util_orderCircuits(current);
+    if (cirOrdResp.status == 'OK') {
+        gs.addInfoMessage("Circuit order status: nsw2Util_orderCircuits called, return OK.");
+		gs.addInfoMessage("nsw2Util_orderCircuits msg: " + cirOrdResp.message);
+    } else {
+        gs.addErrorMessage("nsw2 server side script to order circuits was called and returned " + cirOrdResp.status + " , " + cirOrdResp.message);
+    }
+
+}
+// redirect to here
+action.setRedirectURL(current);
+]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-02-08 15:40:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2da60be11ba549107294db1ee54bcbc4</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Order circuit(s)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ui_action_2da60be11ba549107294db1ee54bcbc4</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2023-02-20 19:17:47</sys_updated_on>
+        <table>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

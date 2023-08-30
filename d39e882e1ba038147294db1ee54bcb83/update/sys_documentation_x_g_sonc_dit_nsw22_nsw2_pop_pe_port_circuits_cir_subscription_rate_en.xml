@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="cir_subscription_rate" label="CIR Subscription Rate" language="en" table="x_g_sonc_dit_nsw22_nsw2_pop_pe_port_circuits">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>cir_subscription_rate</element>
+            <help/>
+            <hint/>
+            <label>CIR Subscription Rate</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_pop_pe_port_circuits</name>
+            <plural>CIR Subscription Rates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-06-21 14:39:24</sys_created_on>
+            <sys_id>0e1bfd371bc3211490990f6fe54bcb5d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>CIR Subscription Rate</sys_name>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_documentation_x_g_sonc_dit_nsw22_nsw2_pop_pe_port_circuits_cir_subscription_rate_en</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-06-21 14:39:24</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

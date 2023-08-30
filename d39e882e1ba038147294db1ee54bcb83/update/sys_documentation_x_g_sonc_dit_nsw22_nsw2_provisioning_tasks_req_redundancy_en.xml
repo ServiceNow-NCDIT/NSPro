@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="req_redundancy" label="Req redundancy" language="en" table="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>req_redundancy</element>
+            <help/>
+            <hint/>
+            <label>Req redundancy</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</name>
+            <plural>Req redundancies</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-10-28 16:37:20</sys_created_on>
+            <sys_id>e91bbd371bc3211490990f6fe54bcba8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Req redundancy</sys_name>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_documentation_x_g_sonc_dit_nsw22_nsw2_provisioning_tasks_req_redundancy_en</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-10-28 16:37:20</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

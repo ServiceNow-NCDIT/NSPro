@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="NSPro Site Service Change Request">154b6d971bdf4d506e32eaccac4bcb3d</cat_item>
+        <cat_variable>IO:cbb02deb1b17419090990f6fe54bcbc5</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>nsw2 set wan svc change options</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    //Type appropriate comment here, and begin script below
+    console.info("client script: nsw2 set wan svc change options called.");
+
+    // call to get list of applicable services.
+    var detailsAjax = new GlideAjax('x_g_sonc_dit_nsw22.NcditNsw2UtilsClient');
+    detailsAjax.addParam('sysparm_name', 'getServiceListByHACat');
+    detailsAjax.addParam('ha_cat', 'any'); // blank category will match any category
+    detailsAjax.getXML(callbackGetSvcDetails);
+}
+
+function callbackGetSvcDetails(response) {
+    var svcList = response.responseXML.documentElement.getAttribute("answer");
+    var services = JSON.parse(svcList);
+    console.info("nsw2: at callback for services");
+    //console.info("debug response:", response);
+    console.info("services: ", services);
+
+    // set services options in dropdown selection here.
+    g_form.clearOptions('requested_service_codes');
+    g_form.addOption('requested_service_codes', '', '-- None --');
+    for (var iSvcList = 0; iSvcList < services.svcList.length; iSvcList++) {
+        g_form.addOption('requested_service_codes', services.svcList[iSvcList].svc_code, services.svcList[iSvcList].svc_title);
+    }
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-08-22 18:19:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>af39bbd81b69195090990f6fe54bcb64</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>nsw2 set wan svc change options</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>catalog_script_client_af39bbd81b69195090990f6fe54bcb64</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-08-22 19:26:42</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

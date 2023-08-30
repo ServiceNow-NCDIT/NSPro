@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks">circuit_idVALCHANGES^circuit_idISNOTEMPTY^request_type=1^EQ<item endquery="false" field="circuit_id" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="circuit_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item display_value="New" endquery="false" field="request_type" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>nsw2 prov set circuit id primary</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	gs.info("nsw2: BR nsw2 prov set circuit id primary triggered by primary circuit id change on task " + current.number);
+	// call utility
+	var nsw2utils = new NcditNsw2Utils();
+	var renameResp = nsw2utils.nsw2Util_renameDmyCircuitFromPr(current, '1');
+	if (renameResp.status != 'OK') {
+		gs.error("nsw2: BR nsw2 prov set circuit id primary ERROR: " + renameResp.status + ", " + renameResp.message);
+	} else {
+		gs.info("nsw2: BR nsw2 prov set circuit id primary - rename response = " + renameResp.status);
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-05-06 17:45:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4ea56f691b138d106e32eaccac4bcbca</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>nsw2 prov set circuit id primary</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_script_4ea56f691b138d106e32eaccac4bcbca</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-06-30 16:11:54</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=4ea56f691b138d106e32eaccac4bcbca"/>
+</record_update>

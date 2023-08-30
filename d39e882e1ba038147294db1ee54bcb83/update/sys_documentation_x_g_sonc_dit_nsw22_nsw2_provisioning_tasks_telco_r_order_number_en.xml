@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="telco_r_order_number" label="Telco order number" language="en" table="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>telco_r_order_number</element>
+            <help/>
+            <hint/>
+            <label>Telco order number</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</name>
+            <plural>Telco order numbers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-03-28 13:10:54</sys_created_on>
+            <sys_id>bd1bbd371bc3211490990f6fe54bcbdf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Telco order number</sys_name>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_documentation_x_g_sonc_dit_nsw22_nsw2_provisioning_tasks_telco_r_order_number_en</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-03-28 13:10:54</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="dit nspro Config">3f5cf0f01b87b89090990f6fe54bcb0f</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>Security and login</name>
+        <optional_parameters/>
+        <order>100</order>
+        <parent_macroponent display_value="Settings Page">b75cf0f09c87b890f67bf2e5b7c5f92d</parent_macroponent>
+        <parent_macroponent_composition_element_id>tab_set_1</parent_macroponent_composition_element_id>
+        <route_type>cketv4vef00013g8ybmju8dpb</route_type>
+        <screen_type display_value="Security and login">f35cf0f0f987b890de0b5ccd779e6f2e</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-10-04 14:59:32</sys_created_on>
+        <sys_id>375cf0f0ea87b89071c29e94eaf2c12e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Security and login</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ux_app_route_375cf0f0ea87b89071c29e94eaf2c12e</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-10-04 14:59:32</sys_updated_on>
+    </sys_ux_app_route>
+</record_update>

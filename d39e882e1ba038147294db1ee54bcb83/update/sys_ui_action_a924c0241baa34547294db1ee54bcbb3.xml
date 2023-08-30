@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>nsw2_assign_siteId</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments>This will call a script include to assign a site id. 7/11/22 Only valid for New request.</comments>
+        <condition>(current.request_type == '1') &amp;&amp; (current.site_id &lt; '0' || current.site_id == "")</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>primary</form_style>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint>Click to assign a new site id for the site associated with this request</hint>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Assign NSPro Site Id</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[action.setRedirectURL(current);
+current.update();
+if (! current.isActionAborted())
+	// call a script include to return a new id
+	// Instantiate the nsw2 utilities
+	var nsw2util = new NcditNsw2Utils();
+	var newSiteId = nsw2util.nsw2Util_getNewSiteId("CESite");
+
+	// update field with provided site id.
+	current.site_id = newSiteId;
+	current.work_notes = "New site id requested is: " + newSiteId;
+	current.update();
+	if (current.site_id != "") {
+		gs.addInfoMessage("A site id has been assigned. Create site record soon to retain this id.");
+	} else {
+		gs.addErrorMessage("nsw2 server side script was called but no site_id was assigned. Check logs if you suspect there is an error.");
+	}
+	
+	// redirect to here
+    action.setRedirectURL(current);
+]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-09-08 19:47:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a924c0241baa34547294db1ee54bcbb3</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Assign NSPro Site Id</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ui_action_a924c0241baa34547294db1ee54bcbb3</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-07-25 19:11:55</sys_updated_on>
+        <table>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

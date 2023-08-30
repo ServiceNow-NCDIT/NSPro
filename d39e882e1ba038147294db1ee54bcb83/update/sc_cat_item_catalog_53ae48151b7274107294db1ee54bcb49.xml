@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="NSPro New Site Request">896a88191b3274107294db1ee54bcb96</sc_cat_item>
+        <sc_catalog display_value="NCDIT Service Catalog">8e1bef5bdb072f007ea9d2e3ca96192c</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-09-23 14:41:07</sys_created_on>
+        <sys_id>53ae48151b7274107294db1ee54bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DIT Service Catalog.nspro new site</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_53ae48151b7274107294db1ee54bcb49</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-09-23 14:41:07</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="cmn_location" version="2" view="RPT451804021beeb4107294db1ee54bcb50">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>a55844421beeb4107294db1ee54bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_nsw_site_id</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>295844421beeb4107294db1ee54bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_nsw_site</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>a95844421beeb4107294db1ee54bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>account</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>2d5844421beeb4107294db1ee54bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>contact</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>ad5844421beeb4107294db1ee54bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>phone</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>215844421beeb4107294db1ee54bcb1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>latitude</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>a15844421beeb4107294db1ee54bcb1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>longitude</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>255844421beeb4107294db1ee54bcb1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>lat_long_error</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>a55844421beeb4107294db1ee54bcb1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_county</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>295844421beeb4107294db1ee54bcb1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_county_name</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>a95844421beeb4107294db1ee54bcb1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>street</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>2d5844421beeb4107294db1ee54bcb1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>city</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>ad5844421beeb4107294db1ee54bcb1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>13</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>215844421beeb4107294db1ee54bcb1e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>zip</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>14</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>a15844421beeb4107294db1ee54bcb1e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>company</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>15</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>255844421beeb4107294db1ee54bcb1e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>stock_room</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>16</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>a55844421beeb4107294db1ee54bcb1e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>parent</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>17</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>295844421beeb4107294db1ee54bcb1e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>18</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>a95844421beeb4107294db1ee54bcb1e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_by</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>19</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>2d5844421beeb4107294db1ee54bcb1e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>20</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>ad5844421beeb4107294db1ee54bcb1e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>type</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>21</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>215844421beeb4107294db1ee54bcb1f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_tags</element>
+            <list_id display_value="cmn_location" element="NULL" name="cmn_location" parent="NULL" relationship="NULL" sys_domain="global" view="829bbd7b1bc3211490990f6fe54bcbef">ad5844421beeb4107294db1ee54bcb1b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>22</position>
+            <sum>false</sum>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_id>a15844421beeb4107294db1ee54bcb1f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>cmn_location</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-09-13 11:53:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad5844421beeb4107294db1ee54bcb1b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmn_location</sys_name>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_ui_list_cmn_location_RPT451804021beeb4107294db1ee54bcb50</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-09-13 11:53:09</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt451804021beeb4107294db1ee54bcb50" name="RPT451804021beeb4107294db1ee54bcb50">829bbd7b1bc3211490990f6fe54bcbef</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

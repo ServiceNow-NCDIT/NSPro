@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-10-04 14:59:33</sys_created_on>
+        <sys_id>306cb4f01b87b89090990f6fe54bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b35cf0f01b87b89090990f6fe54bcb10.x_g_sonc_dit_nsw22.user</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_security_acl display_value="b35cf0f01b87b89090990f6fe54bcb10">bf5cf0f0c587b890996a67f70095543b</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_306cb4f01b87b89090990f6fe54bcb86</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-10-04 14:59:33</sys_updated_on>
+        <sys_user_role display_value="x_g_sonc_dit_nsw22.user" name="x_g_sonc_dit_nsw22.user">ce02584b1b30b8107294db1ee54bcb46</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

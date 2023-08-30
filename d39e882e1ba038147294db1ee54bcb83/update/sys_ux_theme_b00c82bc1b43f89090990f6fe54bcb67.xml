@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme">
+    <sys_ux_theme action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>First custom portal theme for NSPro</description>
+        <name>NSPro portal theme 1</name>
+        <parent display_value="Light Theme">735cf0f02387b89037cc313a480f6e2c</parent>
+        <sys_class_name>sys_ux_theme</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-10-04 20:48:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b00c82bc1b43f89090990f6fe54bcb67</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>NSPro portal theme 1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ux_theme_b00c82bc1b43f89090990f6fe54bcb67</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-12-07 20:10:50</sys_updated_on>
+        <theme>{&#13;
+    "--now-font-family": "'Albert Sans', Arial, sans-serif",&#13;
+    "--now-color_brand--primary": "61,92,33",&#13;
+    "--now-color--primary-1": "61,92,33",&#13;
+    "--now-color--primary-0": "123,184,65",&#13;
+    "--now-color--primary-2": "46,69,24",&#13;
+    "--now-color--primary-3": "31,46,16",&#13;
+    "--now-color--secondary-0": "184,184,228",&#13;
+    "--now-color--secondary-1": "110, 99, 159",&#13;
+    "--now-color--secondary-2": "52,37,121",&#13;
+    "--now-color--secondary-3": "47,28,130",&#13;
+    "--now-color_surface--neutral-6": "201,206,207",&#13;
+    "--now-color_text--primary": "--now-color--neutral-18",&#13;
+    "--now-color_text--secondary": "--now-color--neutral-12",&#13;
+    "--now-color_text--tertiary": "--now-color--neutral-9",&#13;
+    "--now-color--neutral-18": "0,0,0",&#13;
+    "--now-color--neutral-12": "31,46,16",&#13;
+    "--now-color--neutral-9": "22,27,28"&#13;
+}</theme>
+    </sys_ux_theme>
+</record_update>

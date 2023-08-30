@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="telco_select_rcd" label="telco select rcd" language="en" table="var__m_sys_hub_action_input_265e27861b6801d47294db1ee54bcb79">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>telco_select_rcd</element>
+            <help/>
+            <hint/>
+            <label>telco select rcd</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_265e27861b6801d47294db1ee54bcb79</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2021-12-22 14:51:43</sys_created_on>
+            <sys_id>0830ff0e1b6801d47294db1ee54bcb9b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>telco select rcd</sys_name>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_265e27861b6801d47294db1ee54bcb79_telco_select_rcd_en</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2021-12-22 14:51:43</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="NSPro Site Decommission Request">c41af2941b9b011090990f6fe54bcb28</sc_cat_item>
+        <sc_category display_value="Enterprise WAN">3ca84518dbb0f300f9275ad3ca96197c</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-05-02 17:41:22</sys_created_on>
+        <sys_id>fa4f3ad01bdb011090990f6fe54bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enterprise WAN.NSPro Site Decomm Request</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sc_cat_item_category_fa4f3ad01bdb011090990f6fe54bcb98</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-05-02 17:41:22</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

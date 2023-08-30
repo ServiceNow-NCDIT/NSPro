@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="NSPro Site Service Change Request">154b6d971bdf4d506e32eaccac4bcb3d</catalog_item>
+        <catalog_variable>IO:9c2606bc1bd11d546e32eaccac4bcb66</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-08-11 13:19:35</sys_created_on>
+        <sys_id>b9cbca781b151d546e32eaccac4bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>requested_service_codes</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_b9cbca781b151d546e32eaccac4bcbab</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-08-11 13:19:35</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Show wan service options">f65b42781b151d546e32eaccac4bcb08</ui_policy>
+        <variable>requested_service_codes</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>
