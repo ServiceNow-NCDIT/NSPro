@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="dit nsw22">1a1314221b2438147294db1ee54bcb12</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>NEW</link_type>
+        <map_page/>
+        <mobile_title>Create New</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_g_sonc_dit_nsw22_nsw2_sites</name>
+        <order>2</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-06-07 15:51:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d61314221b2438147294db1ee54bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create New</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_app_module_d61314221b2438147294db1ee54bcb1a</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-06-07 15:51:34</sys_updated_on>
+        <timeline_page/>
+        <title>Create New</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_app_module_d61314221b2438147294db1ee54bcb1a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="dit nsw22">1a1314221b2438147294db1ee54bcb12</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>NEW</link_type><map_page/><mobile_title>Create New</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_g_sonc_dit_nsw22_nsw2_sites</name><order>2</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>rlwilliams11</sys_created_by><sys_created_on>2021-06-07 15:51:34</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d61314221b2438147294db1ee54bcb1a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Create New</sys_name><sys_overrides/><sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package><sys_policy/><sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope><sys_update_name>sys_app_module_d61314221b2438147294db1ee54bcb1a</sys_update_name><sys_updated_by>rlwilliams11</sys_updated_by><sys_updated_on>2021-06-07 15:51:34</sys_updated_on><timeline_page/><title>Create New</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1686659200</payload_hash>
+        <record_name>Create New</record_name>
+        <reverted_from/>
+        <source>9f9e882e1ba038147294db1ee54bcb85</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-06-07 15:51:34</sys_created_on>
+        <sys_id>9e1310621b2438147294db1ee54bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179e72c0cd40000001</sys_recorded_at>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-06-07 15:51:34</sys_updated_on>
+        <type>Module</type>
+        <update_guid>5e131422d4243814c892ebf5b13d491b</update_guid>
+        <update_guid_history>5e131422d4243814c892ebf5b13d491b:1686659200</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">89da4b661b2e3c1090990f6fe54bcb48</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-09-15 15:19:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>32abc28d486e437c8f1a5dceb68fd390</sys_id>
+        <sys_metadata>d61314221b2438147294db1ee54bcb1a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create New</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_scope_delete display_value="">a4eca6d1bcd5456ba3789396e6ca6781</sys_scope_delete>
+        <sys_update_name>sys_app_module_d61314221b2438147294db1ee54bcb1a</sys_update_name>
+        <sys_update_version display_value="sys_app_module_d61314221b2438147294db1ee54bcb1a">9e1310621b2438147294db1ee54bcb7f</sys_update_version>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-09-15 15:19:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

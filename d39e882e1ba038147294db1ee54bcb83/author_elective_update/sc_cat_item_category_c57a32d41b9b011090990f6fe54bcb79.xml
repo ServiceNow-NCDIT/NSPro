@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="NSPro Site Decomm Request">c41af2941b9b011090990f6fe54bcb28</sc_cat_item>
+        <sc_category display_value="Enterprise WAN">3ca84518dbb0f300f9275ad3ca96197c</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-05-02 17:20:13</sys_created_on>
+        <sys_id>c57a32d41b9b011090990f6fe54bcb79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enterprise WAN.NSPro Site Decomm Request</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sc_cat_item_category_c57a32d41b9b011090990f6fe54bcb79</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-05-02 17:20:13</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sc_cat_item_category_c57a32d41b9b011090990f6fe54bcb79</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="NSPro Site Decomm Request">c41af2941b9b011090990f6fe54bcb28</sc_cat_item><sc_category display_value="Enterprise WAN">3ca84518dbb0f300f9275ad3ca96197c</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>rlwilliams11</sys_created_by><sys_created_on>2022-05-02 17:20:13</sys_created_on><sys_id>c57a32d41b9b011090990f6fe54bcb79</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Enterprise WAN.NSPro Site Decomm Request</sys_name><sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package><sys_policy/><sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope><sys_update_name>sc_cat_item_category_c57a32d41b9b011090990f6fe54bcb79</sys_update_name><sys_updated_by>rlwilliams11</sys_updated_by><sys_updated_on>2022-05-02 17:20:13</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1242951162</payload_hash>
+        <record_name>Enterprise WAN.NSPro Site Decomm Request</record_name>
+        <reverted_from/>
+        <source>3bfeca081baec5506e32eaccac4bcb8c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-05-02 17:20:14</sys_created_on>
+        <sys_id>c97a32d41b9b011090990f6fe54bcb91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18085c975260000001</sys_recorded_at>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-05-02 17:20:14</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>017a32d4bb9b011045fdb635d856cc91</update_guid>
+        <update_guid_history>017a32d4bb9b011045fdb635d856cc91:1242951162</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">d9cb3a981b9b011090990f6fe54bcb76</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-05-02 17:25:59</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>325f226865dc434c9688ae4e5cb54bc4</sys_id>
+        <sys_metadata>c57a32d41b9b011090990f6fe54bcb79</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enterprise WAN.NSPro Site Decomm Request</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_scope_delete display_value="">a4eca6d1bcd5456ba3789396e6ca6781</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_c57a32d41b9b011090990f6fe54bcb79</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_c57a32d41b9b011090990f6fe54bcb79">c97a32d41b9b011090990f6fe54bcb91</sys_update_version>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-05-02 17:25:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

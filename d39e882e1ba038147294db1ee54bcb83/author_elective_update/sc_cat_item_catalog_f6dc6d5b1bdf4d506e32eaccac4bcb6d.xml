@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="NSPro Site Service Change Request">154b6d971bdf4d506e32eaccac4bcb3d</sc_cat_item>
+        <sc_catalog display_value="DIT Service Catalog">8e1bef5bdb072f007ea9d2e3ca96192c</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-05-11 19:22:59</sys_created_on>
+        <sys_id>f6dc6d5b1bdf4d506e32eaccac4bcb6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DIT Service Catalog.NSPro Site Service Change Request</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_f6dc6d5b1bdf4d506e32eaccac4bcb6d</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-05-11 19:22:59</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sc_cat_item_catalog_f6dc6d5b1bdf4d506e32eaccac4bcb6d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="NSPro Site Service Change Request">154b6d971bdf4d506e32eaccac4bcb3d</sc_cat_item><sc_catalog display_value="DIT Service Catalog">8e1bef5bdb072f007ea9d2e3ca96192c</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>rlwilliams11</sys_created_by><sys_created_on>2022-05-11 19:22:59</sys_created_on><sys_id>f6dc6d5b1bdf4d506e32eaccac4bcb6d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>DIT Service Catalog.NSPro Site Service Change Request</sys_name><sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package><sys_policy/><sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope><sys_update_name>sc_cat_item_catalog_f6dc6d5b1bdf4d506e32eaccac4bcb6d</sys_update_name><sys_updated_by>rlwilliams11</sys_updated_by><sys_updated_on>2022-05-11 19:22:59</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>686000981</payload_hash>
+        <record_name>DIT Service Catalog.NSPro Site Service Change Request</record_name>
+        <reverted_from/>
+        <source>3bfeca081baec5506e32eaccac4bcb8c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-05-11 19:22:59</sys_created_on>
+        <sys_id>badc6d5b1bdf4d506e32eaccac4bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180b493133b0000001</sys_recorded_at>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-05-11 19:22:59</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>fedc6d5b7cdf4d507d27c854894c2873</update_guid>
+        <update_guid_history>fedc6d5b7cdf4d507d27c854894c2873:686000981</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">c36d21db1bdf4d506e32eaccac4bcbd7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-05-11 19:25:28</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>294c8579b59249cca9a3aa1ff7401810</sys_id>
+        <sys_metadata>f6dc6d5b1bdf4d506e32eaccac4bcb6d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DIT Service Catalog.NSPro Site Service Change Request</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_parent display_value="NSPro Site Service Change Request">154b6d971bdf4d506e32eaccac4bcb3d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_scope_delete display_value="">a4eca6d1bcd5456ba3789396e6ca6781</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_f6dc6d5b1bdf4d506e32eaccac4bcb6d</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_f6dc6d5b1bdf4d506e32eaccac4bcb6d">badc6d5b1bdf4d506e32eaccac4bcb74</sys_update_version>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-05-11 19:25:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d51b7d371bc3211490990f6fe54bcb6d" extends="sys_import_set_row" label="Sonc Dit Nsw22 1631191565727" max_length="40" name="x_g_sonc_dit_nsw22_1631191565727" type="collection">
+        <element attributes="import_attribute_name=CPE_level" label="CPE_level" max_length="40" name="u_cpe_level" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CPE_model_1" label="CPE_model_1" max_length="40" name="u_cpe_model_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CPE_model_2" label="CPE_model_2" max_length="40" name="u_cpe_model_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CPE_model_3" label="CPE_model_3" max_length="40" name="u_cpe_model_3" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CPE_model_4" label="CPE_model_4" max_length="40" name="u_cpe_model_4" type="string"/>
+        <element attributes="import_attribute_name=CPE_port_range_high" label="CPE_port_range_high" max_length="40" name="u_cpe_port_range_high" type="integer"/>
+        <element attributes="import_attribute_name=CPE_port_range_low" label="CPE_port_range_low" max_length="40" name="u_cpe_port_range_low" type="integer"/>
+        <element attributes="import_attribute_name=cpm Core" label="cpm Core" max_length="15" name="u_cpm_core" type="decimal"/>
+        <element attributes="import_attribute_name=cpm CPE" label="cpm CPE" max_length="15" name="u_cpm_cpe" type="decimal"/>
+        <element attributes="import_attribute_name=cpm Transport" label="cpm Transport" max_length="15" name="u_cpm_transport" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=cpm_transport_actual" label="cpm_transport_actual" max_length="40" name="u_cpm_transport_actual" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Created" label="Created" max_length="40" name="u_created" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Full Duplex" label="Full Duplex" max_length="40" name="u_full_duplex" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Media" label="Media" max_length="40" name="u_media" type="string"/>
+        <element attributes="import_attribute_name=Num CPE" label="Num CPE" max_length="40" name="u_num_cpe" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=provider" label="provider" max_length="40" name="u_provider" type="string"/>
+        <element attributes="import_attribute_name=SLA" label="SLA" max_length="15" name="u_sla" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Speed Egress" label="Speed Egress" max_length="40" name="u_speed_egress" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Speed Ingress" label="Speed Ingress" max_length="40" name="u_speed_ingress" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Svc code" label="Svc code" max_length="40" name="u_svc_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=svc_gen_category" label="svc_gen_category" max_length="40" name="u_svc_gen_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Svc HA Category" label="Svc HA Category" max_length="40" name="u_svc_ha_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=svc_title" label="svc_title" max_length="62" name="u_svc_title" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Svc Type" label="Svc Type" max_length="40" name="u_svc_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Updated" label="Updated" max_length="40" name="u_updated" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Updated by" label="Updated by" max_length="40" name="u_updated_by" type="string"/>
+    </element>
+</database>

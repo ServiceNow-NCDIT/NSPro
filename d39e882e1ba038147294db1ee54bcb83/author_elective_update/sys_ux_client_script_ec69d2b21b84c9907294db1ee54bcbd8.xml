@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="quickquote">3fa869ba1bcc89907294db1ee54bcb19</macroponent>
+        <name>New client script 2</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, event, helpers, imports}) {
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-11-29 19:56:30</sys_created_on>
+        <sys_id>ec69d2b21b84c9907294db1ee54bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New client script 2</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ux_client_script_ec69d2b21b84c9907294db1ee54bcbd8</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-11-29 19:56:30</sys_updated_on>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ux_client_script_ec69d2b21b84c9907294db1ee54bcbd8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="quickquote"&gt;3fa869ba1bcc89907294db1ee54bcb19&lt;/macroponent&gt;&lt;name&gt;New client script 2&lt;/name&gt;&lt;required_translations/&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, event, helpers, imports}) {
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;rlwilliams11&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-11-29 19:56:30&lt;/sys_created_on&gt;&lt;sys_id&gt;ec69d2b21b84c9907294db1ee54bcbd8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;New client script 2&lt;/sys_name&gt;&lt;sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22"&gt;d39e882e1ba038147294db1ee54bcb83&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="dit nsw22"&gt;d39e882e1ba038147294db1ee54bcb83&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_ec69d2b21b84c9907294db1ee54bcbd8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;rlwilliams11&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-11-29 19:56:30&lt;/sys_updated_on&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-794969844</payload_hash>
+        <record_name>New client script 2</record_name>
+        <reverted_from/>
+        <source>6106dc2a1b2438147294db1ee54bcb6e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-11-29 19:56:30</sys_created_on>
+        <sys_id>e069d2ba1b84c9907294db1ee54bcb59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d6d452e350000001</sys_recorded_at>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-11-29 19:56:30</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>6c69d2ba5384c99081c1d870e41c1058</update_guid>
+        <update_guid_history>6c69d2ba5384c99081c1d870e41c1058:-794969844</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-11-29 19:57:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>1b1066590bcf4fba8d54433e5495ce39</sys_id>
+        <sys_metadata>ec69d2b21b84c9907294db1ee54bcbd8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New client script 2</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_scope_delete display_value="">a4eca6d1bcd5456ba3789396e6ca6781</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_ec69d2b21b84c9907294db1ee54bcbd8</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_ec69d2b21b84c9907294db1ee54bcbd8">e069d2ba1b84c9907294db1ee54bcb59</sys_update_version>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-11-29 19:57:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

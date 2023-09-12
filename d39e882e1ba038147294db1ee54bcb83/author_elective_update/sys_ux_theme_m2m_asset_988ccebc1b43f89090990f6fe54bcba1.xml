@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_m2m_asset">
+    <sys_ux_theme_m2m_asset action="DELETE">
+        <asset display_value="NSPro logo 3">27facef81b43f89090990f6fe54bcbab</asset>
+        <properties/>
+        <sys_class_name>sys_ux_theme_m2m_asset</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-10-04 20:49:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>988ccebc1b43f89090990f6fe54bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ux_theme_m2m_asset_988ccebc1b43f89090990f6fe54bcba1</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-10-04 20:49:46</sys_updated_on>
+        <theme display_value="NSPro portal theme 1">b00c82bc1b43f89090990f6fe54bcb67</theme>
+    </sys_ux_theme_m2m_asset>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ux_theme_m2m_asset_988ccebc1b43f89090990f6fe54bcba1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_m2m_asset"><sys_ux_theme_m2m_asset action="INSERT_OR_UPDATE"><asset display_value="NSPro logo 3">27facef81b43f89090990f6fe54bcbab</asset><properties/><sys_class_name>sys_ux_theme_m2m_asset</sys_class_name><sys_created_by>rlwilliams11</sys_created_by><sys_created_on>2021-10-04 20:49:46</sys_created_on><sys_domain>global</sys_domain><sys_id>988ccebc1b43f89090990f6fe54bcba1</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package><sys_policy/><sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope><sys_update_name>sys_ux_theme_m2m_asset_988ccebc1b43f89090990f6fe54bcba1</sys_update_name><sys_updated_by>rlwilliams11</sys_updated_by><sys_updated_on>2021-10-04 20:49:46</sys_updated_on><theme display_value="NSPro portal theme 1">b00c82bc1b43f89090990f6fe54bcb67</theme></sys_ux_theme_m2m_asset></record_update>]]></payload>
+        <payload_hash>2034515213</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>6106dc2a1b2438147294db1ee54bcb6e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-10-04 20:49:46</sys_created_on>
+        <sys_id>7e8c82bc1b43f89090990f6fe54bcb87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c4d11d3350000001</sys_recorded_at>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-10-04 20:49:46</sys_updated_on>
+        <type>UX Theme Assets</type>
+        <update_guid>768c82bc9543f890b1c43d29c8c00287</update_guid>
+        <update_guid_history>768c82bc9543f890b1c43d29c8c00287:2034515213</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-10-04 20:50:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_theme_m2m_asset">sys_ux_theme_m2m_asset</sys_db_object>
+        <sys_id>d85ed438ab234f12bd7d81c272e08ac9</sys_id>
+        <sys_metadata>988ccebc1b43f89090990f6fe54bcba1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_scope_delete display_value="">a4eca6d1bcd5456ba3789396e6ca6781</sys_scope_delete>
+        <sys_update_name>sys_ux_theme_m2m_asset_988ccebc1b43f89090990f6fe54bcba1</sys_update_name>
+        <sys_update_version display_value="sys_ux_theme_m2m_asset_988ccebc1b43f89090990f6fe54bcba1">7e8c82bc1b43f89090990f6fe54bcb87</sys_update_version>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-10-04 20:50:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

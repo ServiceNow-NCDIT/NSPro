@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="120bb1371bc3211490990f6fe54bcb4b" label="Telco Selection Criteria" max_length="40" name="x_g_sonc_dit_nsw22_telco_selection_criteria" type="collection">
+        <element choice="1" label="Available services" max_length="40" name="available_services" type="choice">
+            <choice>
+                <element hint="Silver, Hybrid, Gold if two or more providers" inactive_on_update="false" label="Guaranteed Service (Enterprise WAN)" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Best Effort Service" sequence="200" value="2"/>
+            </choice>
+        </element>
+        <element label="BEproviderCount" max_length="40" name="beprovidercount" type="integer"/>
+        <element label="BEProviderPriority1" max_length="40" name="beproviderpriority1" type="string"/>
+        <element label="BEProviderPriority2" max_length="40" name="beproviderpriority2" type="string"/>
+        <element label="BEProviderPriority3" max_length="40" name="beproviderpriority3" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="City" max_length="40" name="city" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="County" max_length="40" name="county" type="string"/>
+        <element label="providerCount" max_length="40" name="providercount" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="ProviderPriority1" max_length="40" name="providerpriority1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ProviderPriority2" max_length="40" name="providerpriority2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ProviderPriority3" max_length="40" name="providerpriority3" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ProviderPriority4" max_length="40" name="providerpriority4" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ProviderPriority5" max_length="40" name="providerpriority5" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ProviderPriority6" max_length="40" name="providerpriority6" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Zip" max_length="40" name="zip" type="string"/>
+    </element>
+</database>

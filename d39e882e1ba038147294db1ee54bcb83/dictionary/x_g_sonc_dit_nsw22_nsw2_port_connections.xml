@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5a1bfd371bc3211490990f6fe54bcbd0" extends="dscy_net_base" label="nsw2 port connections" max_length="40" name="x_g_sonc_dit_nsw22_nsw2_port_connections" type="collection">
+        <element label="A circuit ID" max_length="254" name="a_circuit_id" type="string"/>
+        <element label="A device intf name" max_length="254" name="a_device_intf_name" type="string"/>
+        <element label="A device name" max_length="254" name="a_device_name" type="string"/>
+        <element label="A IP address" max_length="40" name="a_ip_address" type="string"/>
+        <element label="A subnet mask" max_length="40" name="a_subnet_mask" type="string"/>
+        <element label="A vpivci" max_length="40" name="a_vpivci" type="string"/>
+        <element label="Nsw Prov Rcd Ref" max_length="32" name="nsw_prov_rcd_ref" reference="x_g_sonc_dit_nsw22_nsw2_provisioning_tasks" type="reference"/>
+        <element label="Nsw site" max_length="32" name="nsw_site" reference="x_g_sonc_dit_nsw22_nsw2_sites" type="reference"/>
+        <element label="Site ID" max_length="40" name="site_id" type="string"/>
+        <element label="Vrf name" max_length="40" name="vrf_name" type="string"/>
+        <element label="Z circuit ID" max_length="254" name="z_circuit_id" type="string"/>
+        <element label="Z device intf name" max_length="254" name="z_device_intf_name" type="string"/>
+        <element label="Z device name" max_length="254" name="z_device_name" type="string"/>
+        <element label="Z IP address" max_length="254" name="z_ip_address" type="string"/>
+        <element label="Z subnet mask" max_length="40" name="z_subnet_mask" type="string"/>
+        <element label="Z vpivci" max_length="40" name="z_vpivci" type="string"/>
+    </element>
+</database>

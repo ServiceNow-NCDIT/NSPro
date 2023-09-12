@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="nspro new site">896a88191b3274107294db1ee54bcb96</sc_cat_item>
+        <sc_category display_value="Enterprise WAN">3ca84518dbb0f300f9275ad3ca96197c</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-09-23 14:34:36</sys_created_on>
+        <sys_id>3b2dc0111b7274107294db1ee54bcb87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enterprise WAN.nspro new site</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sc_cat_item_category_3b2dc0111b7274107294db1ee54bcb87</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-09-23 14:34:36</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sc_cat_item_category_3b2dc0111b7274107294db1ee54bcb87</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="nspro new site">896a88191b3274107294db1ee54bcb96</sc_cat_item><sc_category display_value="Enterprise WAN">3ca84518dbb0f300f9275ad3ca96197c</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>rlwilliams11</sys_created_by><sys_created_on>2021-09-23 14:34:36</sys_created_on><sys_id>3b2dc0111b7274107294db1ee54bcb87</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Enterprise WAN.nspro new site</sys_name><sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package><sys_policy/><sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope><sys_update_name>sc_cat_item_category_3b2dc0111b7274107294db1ee54bcb87</sys_update_name><sys_updated_by>rlwilliams11</sys_updated_by><sys_updated_on>2021-09-23 14:34:36</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-669654132</payload_hash>
+        <record_name>Enterprise WAN.nspro new site</record_name>
+        <reverted_from/>
+        <source>6106dc2a1b2438147294db1ee54bcb6e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-09-23 14:34:36</sys_created_on>
+        <sys_id>7f2dc0111b7274107294db1ee54bcb92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c131467520000001</sys_recorded_at>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-09-23 14:34:36</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>b32dc011e172741047e5089c2369f792</update_guid>
+        <update_guid_history>b32dc011e172741047e5089c2369f792:-669654132</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">006d48111b7274107294db1ee54bcba2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-09-23 14:35:26</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>460e6b19ccf447f29490c7b44ce291c4</sys_id>
+        <sys_metadata>3b2dc0111b7274107294db1ee54bcb87</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enterprise WAN.nspro new site</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_scope_delete display_value="">a4eca6d1bcd5456ba3789396e6ca6781</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_3b2dc0111b7274107294db1ee54bcb87</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_3b2dc0111b7274107294db1ee54bcb87">7f2dc0111b7274107294db1ee54bcb92</sys_update_version>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-09-23 14:35:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

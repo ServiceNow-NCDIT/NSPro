@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c30b75371bc3211490990f6fe54bcb3a" extends="dscy_net_base" label="Elemento de infraestructura de red" max_length="40" name="x_g_sonc_dit_nsw22_nsw2_vrf_definitions" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;// Add your code here&#10;&#9;var myCalcVrfName = current.vrf_prefix + &quot;-&quot; + current.vrf_number;&#10;&#9;&#10;&#9;return myCalcVrfName;  // return the calculated value&#10;&#10;})(current);" display="true" label="VRF name" max_length="40" name="vrf_name" read_only="true" type="string" virtual="true"/>
+        <element label="VRF number" max_length="40" name="vrf_number" type="string"/>
+        <element label="VRF prefix" max_length="40" name="vrf_prefix" type="string"/>
+        <element choice="3" default="1" label="VRF usage" max_length="40" name="vrf_usage" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Active for WAN" value="1"/>
+                <element inactive_on_update="false" label="Not selectable" value="2"/>
+            </choice>
+        </element>
+    </element>
+</database>

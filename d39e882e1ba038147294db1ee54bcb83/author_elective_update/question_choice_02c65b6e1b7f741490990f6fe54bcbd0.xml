@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>200</order>
+        <published_ref/>
+        <question display_value="">40e457a21b7f741490990f6fe54bcb46</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-11-16 19:30:35</sys_created_on>
+        <sys_id>02c65b6e1b7f741490990f6fe54bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cable</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>question_choice_02c65b6e1b7f741490990f6fe54bcbd0</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-11-16 19:30:35</sys_updated_on>
+        <text>Cable</text>
+        <value>2</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=02c65b6e1b7f741490990f6fe54bcbd0"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>question_choice_02c65b6e1b7f741490990f6fe54bcbd0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>200</order><published_ref/><question display_value="">40e457a21b7f741490990f6fe54bcb46</question><sys_class_name>question_choice</sys_class_name><sys_created_by>rlwilliams11</sys_created_by><sys_created_on>2021-11-16 19:30:35</sys_created_on><sys_id>02c65b6e1b7f741490990f6fe54bcbd0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cable</sys_name><sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package><sys_policy/><sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope><sys_update_name>question_choice_02c65b6e1b7f741490990f6fe54bcbd0</sys_update_name><sys_updated_by>rlwilliams11</sys_updated_by><sys_updated_on>2021-11-16 19:30:35</sys_updated_on><text>Cable</text><value>2</value></question_choice><fx_price action="delete_multiple" query="id=02c65b6e1b7f741490990f6fe54bcbd0"/></record_update>]]></payload>
+        <payload_hash>-560650622</payload_hash>
+        <record_name>Cable</record_name>
+        <reverted_from/>
+        <source>6106dc2a1b2438147294db1ee54bcb6e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-11-16 19:30:35</sys_created_on>
+        <sys_id>86c65b6e1b7f741490990f6fe54bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d2a3ac7c00000001</sys_recorded_at>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-11-16 19:30:35</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>cac65b6e417f7414a1be7b0d824f88d1</update_guid>
+        <update_guid_history>cac65b6e417f7414a1be7b0d824f88d1:-560650622</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">2ef9e82a1bf1499090990f6fe54bcb52</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-02-23 17:01:09</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>dfbfec7609504e00aa642da06f490000</sys_id>
+        <sys_metadata>02c65b6e1b7f741490990f6fe54bcbd0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cable</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_scope_delete display_value="">a4eca6d1bcd5456ba3789396e6ca6781</sys_scope_delete>
+        <sys_update_name>question_choice_02c65b6e1b7f741490990f6fe54bcbd0</sys_update_name>
+        <sys_update_version display_value="question_choice_02c65b6e1b7f741490990f6fe54bcbd0">86c65b6e1b7f741490990f6fe54bcbd2</sys_update_version>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-02-23 17:01:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

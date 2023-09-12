@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="DELETE">
+        <action_name>nsw2_allocateCpe</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+
+}]]></client_script_v2>
+        <comments>This will call a script include to check CPE availability, allocate the proper equipment for the service and drive a request for Field Service to act.</comments>
+        <condition>(current.request_type == '1' &amp;&amp; current.provisoning_state &gt;= '6')</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>primary</form_style>
+        <hint>Click to verify CPE stock availability and submit request for Field Service</hint>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Allocate CPE</name>
+        <onclick>createFSTaskWithInfo()</onclick>
+        <order>500</order>
+        <script><![CDATA[function createFSTaskWithInfo() {
+	action.setRedirectURL(current);
+	current.update();
+
+	var thisFuncName = "createFSTaskWithInfo";
+	jslog("Running " + thisFuncName);
+	if (!current.isActionAborted()) {
+		// call a script include to perform the work
+		// Instantiate the nsw2 utilities
+		var nsw2util = new NcditNsw2Utils();
+		var cpeResp = nsw2util.nsw2Util_reqCpeAllocationByFS(current);
+		if (cpeResp.status == 'OK') {
+			gs.addInfoMessage(cpeResp.message);
+		} else {
+			gs.addErrorMessage("nsw2 server side script to allocate CPE was called and returned " + cpeResp.status + " , " + cpeResp.message);
+		}
+
+	}
+	// redirect to here
+	action.setRedirectURL(current);
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-02-08 14:19:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fe237ee51be149107294db1ee54bcb95</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Allocate CPE</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ui_action_fe237ee51be149107294db1ee54bcb95</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-04-20 17:48:31</sys_updated_on>
+        <table>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_action_fe237ee51be149107294db1ee54bcb95</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;nsw2_allocateCpe&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments&gt;This will call a script include to check CPE availability, allocate the proper equipment for the service and drive a request for Field Service to act.&lt;/comments&gt;&lt;condition&gt;(current.request_type == '1' &amp;amp;&amp;amp; current.provisoning_state &amp;gt;= '6')&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;true&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style&gt;primary&lt;/form_style&gt;&lt;hint&gt;Click to verify CPE stock availability and submit request for Field Service&lt;/hint&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Allocate CPE&lt;/name&gt;&lt;onclick&gt;createFSTaskWithInfo()&lt;/onclick&gt;&lt;order&gt;500&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function createFSTaskWithInfo() {
+	action.setRedirectURL(current);
+	current.update();
+
+	var thisFuncName = "createFSTaskWithInfo";
+	jslog("Running " + thisFuncName);
+	if (!current.isActionAborted()) {
+		// call a script include to perform the work
+		// Instantiate the nsw2 utilities
+		var nsw2util = new NcditNsw2Utils();
+		var cpeResp = nsw2util.nsw2Util_reqCpeAllocationByFS(current);
+		if (cpeResp.status == 'OK') {
+			gs.addInfoMessage(cpeResp.message);
+		} else {
+			gs.addErrorMessage("nsw2 server side script to allocate CPE was called and returned " + cpeResp.status + " , " + cpeResp.message);
+		}
+
+	}
+	// redirect to here
+	action.setRedirectURL(current);
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;rlwilliams11&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-02-08 14:19:04&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;fe237ee51be149107294db1ee54bcb95&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Allocate CPE&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22"&gt;d39e882e1ba038147294db1ee54bcb83&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="dit nsw22"&gt;d39e882e1ba038147294db1ee54bcb83&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_fe237ee51be149107294db1ee54bcb95&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;rlwilliams11&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-04-20 17:48:31&lt;/sys_updated_on&gt;&lt;table&gt;x_g_sonc_dit_nsw22_nsw2_provisioning_tasks&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>483208135</payload_hash>
+        <record_name>Allocate CPE</record_name>
+        <reverted_from/>
+        <source>3bfeca081baec5506e32eaccac4bcb8c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-04-20 17:48:31</sys_created_on>
+        <sys_id>9eddc9a01b0745d06e32eaccac4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18048170cb80000001</sys_recorded_at>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-04-20 17:48:31</sys_updated_on>
+        <type>UI Action</type>
+        <update_guid>92ddc9a08f0745d0876f04a63b41eeaf</update_guid>
+        <update_guid_history>92ddc9a08f0745d0876f04a63b41eeaf:483208135,d0db4524680745d0706effa636b9c911:-1239712225,c29b4de0c60745d02c48f8d58741efe0:804102963,da99c9ecc8c345d02d71498b3263648d:163231761,382081273f1e85502412a54a069989b8:2012369504,4d1b5c63ced685505397ed9276700b7a:841270769,53e5b307905acd100dd61666ab532890:-1303419551,10b5bbc3255acd10ec6922ec913e80b3:-1321779098,cdd936e5f92549102dcfbddc9dfbd184:-125833686,06053e2dd5e149104d348c948d0712ba:-563314069</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-04-20 17:49:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action">sys_ui_action</sys_db_object>
+        <sys_id>3cadaa5997324bbe908248bfaef612c4</sys_id>
+        <sys_metadata>fe237ee51be149107294db1ee54bcb95</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Allocate CPE</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_parent display_value="">15d0316d1b0d78d490990f6fe54bcb20</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_scope_delete display_value="">a4eca6d1bcd5456ba3789396e6ca6781</sys_scope_delete>
+        <sys_update_name>sys_ui_action_fe237ee51be149107294db1ee54bcb95</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_fe237ee51be149107294db1ee54bcb95">9eddc9a01b0745d06e32eaccac4bcbaf</sys_update_version>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-04-20 17:49:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

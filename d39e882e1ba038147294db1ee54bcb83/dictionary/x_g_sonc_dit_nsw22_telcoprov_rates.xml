@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2e0b35371bc3211490990f6fe54bcb4d" label="Telco Provider Rates" max_length="40" name="x_g_sonc_dit_nsw22_telcoprov_rates" type="collection">
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Cost" max_length="20" name="cost" type="price"/>
+        <element attributes="edge_encryption_enabled=true" label="Provider" max_length="100" name="provider" type="string"/>
+        <element attributes="encode_utf8=false" label="Prov contract ref" max_length="32" name="prov_contract_ref" reference="ast_contract" type="reference"/>
+        <element label="Speed" max_length="15" name="speed" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Svc code" max_length="40" name="svc_code" type="string"/>
+        <index name="index">
+            <element name="prov_contract_ref"/>
+        </index>
+    </element>
+</database>

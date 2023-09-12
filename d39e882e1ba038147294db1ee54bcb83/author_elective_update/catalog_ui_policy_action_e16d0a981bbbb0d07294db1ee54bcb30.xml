@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="NSPro New Site Request">896a88191b3274107294db1ee54bcb96</catalog_item>
+        <catalog_variable>IO:44a9f0e01b237c107294db1ee54bcb46</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-11-09 14:23:38</sys_created_on>
+        <sys_id>e16d0a981bbbb0d07294db1ee54bcb30</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>req_redundancy</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_e16d0a981bbbb0d07294db1ee54bcb30</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-11-09 14:27:52</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make HA question visible only for guaranteed service">d56d0a981bbbb0d07294db1ee54bcb2a</ui_policy>
+        <variable>req_redundancy</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>catalog_ui_policy_action_e16d0a981bbbb0d07294db1ee54bcb30</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="NSPro New Site Request">896a88191b3274107294db1ee54bcb96</catalog_item><catalog_variable>IO:44a9f0e01b237c107294db1ee54bcb46</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>true</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>rlwilliams11</sys_created_by><sys_created_on>2021-11-09 14:23:38</sys_created_on><sys_id>e16d0a981bbbb0d07294db1ee54bcb30</sys_id><sys_mod_count>2</sys_mod_count><sys_name>req_redundancy</sys_name><sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package><sys_policy/><sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope><sys_update_name>catalog_ui_policy_action_e16d0a981bbbb0d07294db1ee54bcb30</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2021-11-09 14:27:52</sys_updated_on><table/><ui_policy display_value="Make HA question visible only for guaranteed service">d56d0a981bbbb0d07294db1ee54bcb2a</ui_policy><variable>req_redundancy</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1162588371</payload_hash>
+        <record_name>req_redundancy</record_name>
+        <reverted_from/>
+        <source>6106dc2a1b2438147294db1ee54bcb6e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-11-09 14:27:52</sys_created_on>
+        <sys_id>af5e4ad41bf7bc9090990f6fe54bcb3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d051920a90000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-11-09 14:27:52</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>a35e4ad4c3f7bc90d4d9538c5c4dc03c</update_guid>
+        <update_guid_history>a35e4ad4c3f7bc90d4d9538c5c4dc03c:1162588371,e96d0a981dbbb0d01387a0604e497247:762173002,296d0a9844bbb0d081fd0fb41ac23340:1162588371</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">5f39c43c1b37b0d090990f6fe54bcbbd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-11-10 18:03:11</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>05877018f3344f2380cfbb6e42b85a41</sys_id>
+        <sys_metadata>e16d0a981bbbb0d07294db1ee54bcb30</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>req_redundancy</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_scope_delete display_value="">a4eca6d1bcd5456ba3789396e6ca6781</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_e16d0a981bbbb0d07294db1ee54bcb30</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_e16d0a981bbbb0d07294db1ee54bcb30">af5e4ad41bf7bc9090990f6fe54bcb3c</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-11-10 18:03:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

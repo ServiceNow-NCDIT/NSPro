@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="461bfd371bc3211490990f6fe54bcb55" label="nsw2 pop pe port circuits" max_length="40" name="x_g_sonc_dit_nsw22_nsw2_pop_pe_port_circuits" type="collection">
+        <element label="CIR Subscription Rate" max_length="20" name="cir_subscription_rate" type="decimal"/>
+        <element label="Company" max_length="32" name="company" reference="core_company" type="reference"/>
+        <element label="CE CIR Total" max_length="20" name="endpoint_cir_total" type="decimal"/>
+        <element label="CE Count" max_length="40" name="endpoint_count" type="integer"/>
+        <element label="Interface IP Range" max_length="40" name="interface_ip_range" type="string"/>
+        <element label="Interface VLAN range" max_length="40" name="interface_vlan_range" type="string"/>
+        <element display="true" label="Name" max_length="255" name="name" type="string"/>
+        <element label="Site Id" max_length="40" name="nsw_site_id" type="string"/>
+        <element label="PE Circuit CIR" max_length="20" name="pe_circuit_cir" type="decimal"/>
+        <element label="PE Circuit Id" max_length="100" name="pe_circuit_id" type="string"/>
+        <element choice="1" label="PE Circuit type" max_length="40" name="pe_circuit_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Metro Ethernet (ME)" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Metro Ethernet (Dedicated)" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="ASE" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="ASE (Dedicated)" sequence="400" value="4"/>
+                <element inactive_on_update="false" label="ATM" sequence="500" value="5"/>
+                <element inactive_on_update="false" label="Frame Relay" sequence="600" value="6"/>
+            </choice>
+        </element>
+        <element label="PE Interface" max_length="255" name="pe_interface" type="string"/>
+        <element label="PE Router" max_length="40" name="pe_router" type="string"/>
+        <element label="Point of Presence" max_length="40" name="point_of_presence" type="string"/>
+        <element label="Service for" max_length="40" name="service_for" type="string"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Pending delete" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Not active for use" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="Deleted" sequence="400" value="4"/>
+            </choice>
+        </element>
+        <element label="Telco_name" max_length="40" name="telco_name" type="string"/>
+        <element label="Utilization 95th pct" max_length="20" name="util95" type="decimal"/>
+        <element label="Utilization Average" max_length="20" name="util_avg" type="decimal"/>
+        <element label="Utilization In 95th pct" max_length="20" name="util_in_95" type="decimal"/>
+        <element label="Utilization Out 95th pct" max_length="20" name="util_out_95" type="decimal"/>
+        <element label="Utilization Pct" max_length="20" name="util_pct" type="decimal"/>
+        <element label="Utilization Peak" max_length="20" name="util_peak" type="decimal"/>
+        <index name="index">
+            <element name="company"/>
+        </index>
+    </element>
+</database>

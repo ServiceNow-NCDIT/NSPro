@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="682b39771bc3211490990f6fe54bcb35" label="Service Definitions" max_length="40" name="x_g_sonc_dit_nsw22_service_definitions" type="collection">
+        <element label="CPE_level" max_length="40" name="cpe_level" type="string"/>
+        <element label="CPE_model_1" max_length="40" name="cpe_model_1" type="string"/>
+        <element label="CPE_model_2" max_length="40" name="cpe_model_2" type="string"/>
+        <element label="CPE_model_3" max_length="40" name="cpe_model_3" type="string"/>
+        <element label="CPE_model_4" max_length="40" name="cpe_model_4" type="string"/>
+        <element label="CPE_port_range_high" max_length="40" name="cpe_port_range_high" type="integer"/>
+        <element label="CPE_port_range_low" max_length="40" name="cpe_port_range_low" type="integer"/>
+        <element attributes="omit_sys_original=true" label="cpm Core" max_length="20" name="cpm_core" type="currency"/>
+        <element attributes="omit_sys_original=true" label="cpm CPE" max_length="20" name="cpm_cpe" type="currency"/>
+        <element attributes="omit_sys_original=true" label="cpm Transport" max_length="20" name="cpm_transport" type="currency"/>
+        <element label="Full Duplex" max_length="40" name="full_duplex" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Media" max_length="40" name="media" type="string"/>
+        <element label="Num CPE" max_length="40" name="num_cpe" type="integer"/>
+        <element label="SLA" max_length="15" name="sla" type="decimal"/>
+        <element label="Speed Egress" max_length="15" name="speed_egress" type="decimal"/>
+        <element label="Speed Ingress" max_length="15" name="speed_ingress" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Svc code" max_length="40" name="svc_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Svc HA Category" max_length="40" name="svc_ha_category" type="string"/>
+        <element display="true" label="Svc title" max_length="254" name="svc_title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Svc Type" max_length="40" name="svc_type" type="string"/>
+    </element>
+</database>

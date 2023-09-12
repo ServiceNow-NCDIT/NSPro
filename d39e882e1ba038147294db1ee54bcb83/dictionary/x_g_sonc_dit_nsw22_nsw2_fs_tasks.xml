@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="720b35371bc3211490990f6fe54bcb90" extends="task" label="Tarea" max_length="40" name="x_g_sonc_dit_nsw22_nsw2_fs_tasks" type="collection">
+        <element choice="1" label="Activity type" max_length="40" name="nsp_activity_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New site CPE allocation" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="New site CPE install" sequence="150" value="2"/>
+                <element inactive_on_update="false" label="Equipment replacement" sequence="200" value="3"/>
+                <element inactive_on_update="false" label="Equipment retrieval" sequence="300" value="4"/>
+            </choice>
+        </element>
+        <element default="install_status=6^substatus=available" label="nsp asset search" max_length="254" name="nsp_asset_search" type="string"/>
+        <element label="Planned activity datetime" max_length="40" name="nsp_planned_activity_datetime" type="glide_date_time"/>
+        <element label="Required LAN CPE count" max_length="40" name="required_lan_cpe_count" type="integer"/>
+        <element label="Required LAN models" max_length="254" name="required_lan_models" type="string"/>
+        <element label="Required WAN CPE count" max_length="40" name="required_wan_cpe_count" type="integer"/>
+        <element label="Required WAN models" max_length="254" name="required_wan_models" type="string"/>
+        <element label="Selected assets" max_length="4000" name="selected_assets" reference="alm_asset" reference_qual="install_status=6^substatus=available^EQ" reference_qual_condition="install_status=6^substatus=available^EQ" type="glide_list"/>
+        <element label="Selected asset serial numbers" max_length="1000" name="selected_asset_serial_numbers" read_only="true" type="string"/>
+        <element label="Site CPE cmdb items" max_length="4000" name="site_cpe_cmdb_items" reference="cmdb_ci_netgear" type="glide_list"/>
+        <element label="Site rcd ref" max_length="32" name="site_rcd_ref" reference="x_g_sonc_dit_nsw22_nsw2_sites" type="reference"/>
+        <index name="index">
+            <element name="site_rcd_ref"/>
+        </index>
+    </element>
+</database>

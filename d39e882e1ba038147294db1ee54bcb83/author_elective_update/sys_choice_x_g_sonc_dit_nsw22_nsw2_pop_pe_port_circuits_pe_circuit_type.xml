@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="pe_circuit_type" table="x_g_sonc_dit_nsw22_nsw2_pop_pe_port_circuits" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>pe_circuit_type</element>
+            <name>x_g_sonc_dit_nsw22_nsw2_pop_pe_port_circuits</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-01-07 19:43:25</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>pe_circuit_type</sys_name>
+            <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+            <sys_update_name>sys_choice_x_g_sonc_dit_nsw22_nsw2_pop_pe_port_circuits_pe_circuit_type</sys_update_name>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-01-07 19:43:25</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pe_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Metro Ethernet (ME)</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_pop_pe_port_circuits</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-01-07 19:43:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-01-07 19:44:27</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pe_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Metro Ethernet (Dedicated)</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_pop_pe_port_circuits</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-01-07 19:44:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-01-07 19:44:30</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pe_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASE</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_pop_pe_port_circuits</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-01-07 19:45:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-01-07 19:45:11</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pe_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASE (Dedicated)</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_pop_pe_port_circuits</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-01-07 19:45:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-01-07 19:45:51</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pe_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ATM</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_pop_pe_port_circuits</name>
+            <sequence>500</sequence>
+            <synonyms/>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-01-07 19:46:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-01-07 19:46:14</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pe_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Frame Relay</label>
+            <language>en</language>
+            <name>x_g_sonc_dit_nsw22_nsw2_pop_pe_port_circuits</name>
+            <sequence>600</sequence>
+            <synonyms/>
+            <sys_created_by>rlwilliams11</sys_created_by>
+            <sys_created_on>2022-01-07 19:46:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>rlwilliams11</sys_updated_by>
+            <sys_updated_on>2022-01-07 19:46:30</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

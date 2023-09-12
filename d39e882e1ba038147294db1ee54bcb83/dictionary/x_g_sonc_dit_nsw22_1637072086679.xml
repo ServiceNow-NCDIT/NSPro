@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="470b75371bc3211490990f6fe54bcb19" extends="sys_import_set_row" label="Fila del conjunto de importación" max_length="40" name="x_g_sonc_dit_nsw22_1637072086679" type="collection">
+        <element attributes="import_attribute_name=cost" label="cost" max_length="15" name="u_cost" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=provider" label="provider" max_length="40" name="u_provider" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=prov_contract_ref" label="prov_contract_ref" max_length="40" name="u_prov_contract_ref" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=speed" label="speed" max_length="40" name="u_speed" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=svc_code" label="svc_code" max_length="40" name="u_svc_code" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>requested_service_codes</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-05-03 17:42:15</sys_created_on>
+        <sys_id>d90900b41b5b05106e32eaccac4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>requested_service_codes</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>sys_ui_policy_action_d90900b41b5b05106e32eaccac4bcb2f</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-05-03 17:42:15</sys_updated_on>
+        <table>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</table>
+        <ui_policy display_value="Adjust fields for delete request">c57600301b5b05106e32eaccac4bcbf1</ui_policy>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_policy_action_d90900b41b5b05106e32eaccac4bcb2f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>requested_service_codes</field><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>rlwilliams11</sys_created_by><sys_created_on>2022-05-03 17:42:15</sys_created_on><sys_id>d90900b41b5b05106e32eaccac4bcb2f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>requested_service_codes</sys_name><sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package><sys_policy/><sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope><sys_update_name>sys_ui_policy_action_d90900b41b5b05106e32eaccac4bcb2f</sys_update_name><sys_updated_by>rlwilliams11</sys_updated_by><sys_updated_on>2022-05-03 17:42:15</sys_updated_on><table>x_g_sonc_dit_nsw22_nsw2_provisioning_tasks</table><ui_policy display_value="Adjust fields for delete request">c57600301b5b05106e32eaccac4bcbf1</ui_policy><visible>false</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-1754879998</payload_hash>
+        <record_name>requested_service_codes</record_name>
+        <reverted_from/>
+        <source>3bfeca081baec5506e32eaccac4bcb8c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-05-03 17:42:15</sys_created_on>
+        <sys_id>c119c0b41b5b05106e32eaccac4bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1808b03fa690000001</sys_recorded_at>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-05-03 17:42:15</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>c919c0b4585b051005cb28678f8276a8</update_guid>
+        <update_guid_history>c919c0b4585b051005cb28678f8276a8:-1754879998</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-05-03 17:43:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>7e3474949457490c921f55ba37fb9010</sys_id>
+        <sys_metadata>d90900b41b5b05106e32eaccac4bcb2f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>requested_service_codes</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_parent display_value="Adjust fields for delete request">c57600301b5b05106e32eaccac4bcbf1</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_scope_delete display_value="">a4eca6d1bcd5456ba3789396e6ca6781</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_d90900b41b5b05106e32eaccac4bcb2f</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_d90900b41b5b05106e32eaccac4bcb2f">c119c0b41b5b05106e32eaccac4bcba9</sys_update_version>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-05-03 17:43:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

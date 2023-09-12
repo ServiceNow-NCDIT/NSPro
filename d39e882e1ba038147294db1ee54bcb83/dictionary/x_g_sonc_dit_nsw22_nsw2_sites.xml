@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="a80c993f1bcfedd090990f6fe54bcb79" label="nsw2 sites" max_length="40" name="x_g_sonc_dit_nsw22_nsw2_sites" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Activity history" max_length="4000" name="activity_history" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="Agency name" max_length="255" name="agency_name" type="string"/>
+        <element label="Agency ref" max_length="32" name="agency_ref" reference="u_org_agency" type="reference"/>
+        <element attributes="encode_utf8=false" label="Contact ops alternate" max_length="32" name="contact_ops_alt" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Contact ops primary" max_length="32" name="contact_ops_pri" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Dept code" max_length="40" name="dept_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1000" name="description" type="string"/>
+        <element label="Formatted address" max_length="255" name="formatted_address" type="string"/>
+        <element attributes="encode_utf8=false" label="Location" max_length="32" name="location" reference="cmn_location" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Name" max_length="240" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Office hours desc" max_length="100" name="office_hours_desc" type="string"/>
+        <element label="Service offerings in use" max_length="4000" name="service_offerings_in_use" reference="x_g_sonc_dit_nsw22_service_definitions" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Site Id" max_length="40" name="site_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Site in service date" max_length="40" name="site_in_service_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Site name" max_length="255" name="site_name" type="string"/>
+        <element label="Site priority" max_length="40" name="site_priority" type="integer"/>
+        <element label="Site state" max_length="40" name="site_state" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Site type" max_length="40" name="site_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Installed" sequence="100" value="Installed"/>
+                <element inactive_on_update="false" label="Decommissioned" sequence="200" value="Decommissioned"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Telco room" max_length="100" name="telco_room" type="string"/>
+        <element label="VIP site" max_length="40" name="vip_site" type="boolean"/>
+        <index name="index">
+            <element name="contact_ops_alt"/>
+        </index>
+        <index name="index2">
+            <element name="contact_ops_pri"/>
+        </index>
+        <index name="index3">
+            <element name="location"/>
+        </index>
+        <index name="index4">
+            <element name="agency_ref"/>
+        </index>
+    </element>
+</database>

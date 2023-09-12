@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="NSPro New Site Request">896a88191b3274107294db1ee54bcb96</catalog_item>
+        <catalog_variable>IO:40e457a21b7f741490990f6fe54bcb46</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-11-16 19:36:15</sys_created_on>
+        <sys_id>e0e717221bbf741490990f6fe54bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>media</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_e0e717221bbf741490990f6fe54bcb7a</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-11-16 19:36:15</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Enable media question for best effort">6d87d3ee1b7f741490990f6fe54bcbdc</ui_policy>
+        <variable>media</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>catalog_ui_policy_action_e0e717221bbf741490990f6fe54bcb7a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="NSPro New Site Request">896a88191b3274107294db1ee54bcb96</catalog_item><catalog_variable>IO:40e457a21b7f741490990f6fe54bcb46</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>true</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>rlwilliams11</sys_created_by><sys_created_on>2021-11-16 19:36:15</sys_created_on><sys_id>e0e717221bbf741490990f6fe54bcb7a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>media</sys_name><sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package><sys_policy/><sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope><sys_update_name>catalog_ui_policy_action_e0e717221bbf741490990f6fe54bcb7a</sys_update_name><sys_updated_by>rlwilliams11</sys_updated_by><sys_updated_on>2021-11-16 19:36:15</sys_updated_on><table/><ui_policy display_value="Enable media question for best effort">6d87d3ee1b7f741490990f6fe54bcbdc</ui_policy><variable>media</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>530636412</payload_hash>
+        <record_name>media</record_name>
+        <reverted_from/>
+        <source>6106dc2a1b2438147294db1ee54bcb6e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-11-16 19:36:15</sys_created_on>
+        <sys_id>85185bae1b7f741490990f6fe54bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d2a3ff88b0000001</sys_recorded_at>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-11-16 19:36:15</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>8d185baeb27f741453ca9ec486dd3c5d</update_guid>
+        <update_guid_history>8d185baeb27f741453ca9ec486dd3c5d:530636412</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">89da64aa1bf1499090990f6fe54bcb3d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2022-02-23 17:04:52</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>7844d71d246249bdbfecb9e91866fa89</sys_id>
+        <sys_metadata>e0e717221bbf741490990f6fe54bcb7a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>media</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_scope_delete display_value="">a4eca6d1bcd5456ba3789396e6ca6781</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_e0e717221bbf741490990f6fe54bcb7a</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_e0e717221bbf741490990f6fe54bcb7a">85185bae1b7f741490990f6fe54bcb5e</sys_update_version>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2022-02-23 17:04:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -47,7 +47,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>rlwilliams11</sys_created_by>
         <sys_created_on>2022-03-21 17:38:24</sys_created_on>
-        <sys_id>151b7d371bc3211490990f6fe54bcb90</sys_id>
         <sys_name>CPE_port_range_high</sys_name>
         <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
         <sys_policy/>

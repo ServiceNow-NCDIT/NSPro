@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="NSPro New Site Request">896a88191b3274107294db1ee54bcb96</catalog_item>
+        <catalog_variable>IO:169d42d81bbbb0d07294db1ee54bcb70</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-11-09 15:31:50</sys_created_on>
+        <sys_id>b0bc1a1c1b3fb0d07294db1ee54bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>requested_service_codes</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_b0bc1a1c1b3fb0d07294db1ee54bcb35</sys_update_name>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-11-09 15:31:50</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Filter service options">db8b5e581b3fb0d07294db1ee54bcb3d</ui_policy>
+        <variable>requested_service_codes</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>catalog_ui_policy_action_b0bc1a1c1b3fb0d07294db1ee54bcb35</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="NSPro New Site Request">896a88191b3274107294db1ee54bcb96</catalog_item><catalog_variable>IO:169d42d81bbbb0d07294db1ee54bcb70</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>rlwilliams11</sys_created_by><sys_created_on>2021-11-09 15:31:50</sys_created_on><sys_id>b0bc1a1c1b3fb0d07294db1ee54bcb35</sys_id><sys_mod_count>0</sys_mod_count><sys_name>requested_service_codes</sys_name><sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package><sys_policy/><sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope><sys_update_name>catalog_ui_policy_action_b0bc1a1c1b3fb0d07294db1ee54bcb35</sys_update_name><sys_updated_by>rlwilliams11</sys_updated_by><sys_updated_on>2021-11-09 15:31:50</sys_updated_on><table/><ui_policy display_value="Filter service options">db8b5e581b3fb0d07294db1ee54bcb3d</ui_policy><variable>requested_service_codes</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-19430180</payload_hash>
+        <record_name>requested_service_codes</record_name>
+        <reverted_from/>
+        <source>6106dc2a1b2438147294db1ee54bcb6e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rlwilliams11</sys_created_by>
+        <sys_created_on>2021-11-09 15:31:50</sys_created_on>
+        <sys_id>640d5edc1bfbb0d07294db1ee54bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d0553b0520000001</sys_recorded_at>
+        <sys_updated_by>rlwilliams11</sys_updated_by>
+        <sys_updated_on>2021-11-09 15:31:50</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>6c0d5edc26fbb0d0fa84d084174876a1</update_guid>
+        <update_guid_history>6c0d5edc26fbb0d0fa84d084174876a1:-19430180</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">6739c43c1b37b0d090990f6fe54bcbcd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-11-10 18:03:11</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>005a7022f2e644bb80866fa59cce04b9</sys_id>
+        <sys_metadata>b0bc1a1c1b3fb0d07294db1ee54bcb35</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>requested_service_codes</sys_name>
+        <sys_package display_value="dit nsw22" source="x_g_sonc_dit_nsw22">d39e882e1ba038147294db1ee54bcb83</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="dit nsw22">d39e882e1ba038147294db1ee54bcb83</sys_scope>
+        <sys_scope_delete display_value="">a4eca6d1bcd5456ba3789396e6ca6781</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_b0bc1a1c1b3fb0d07294db1ee54bcb35</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_b0bc1a1c1b3fb0d07294db1ee54bcb35">640d5edc1bfbb0d07294db1ee54bcba2</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-11-10 18:03:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
